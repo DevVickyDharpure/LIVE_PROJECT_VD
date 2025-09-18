@@ -175,7 +175,7 @@
             height: 100%;
             width: 100%;
             background: linear-gradient(to top, #413434, #938989, #454444);
-
+            
         }
 
         .card-section-1 {
@@ -203,6 +203,7 @@
             width: 260px;
             display: flex;
             flex-direction: column;
+            border-radius: 8px;
 
 
         }
@@ -213,11 +214,13 @@
             width: 85%;
             margin-left: 8%;
             margin-top: 6%;
+            border-radius: 5px;
         }
+
         /* card-text */
-        .card-text-name{
-          padding-left: 40%;
-            
+        .card-text-name {
+            padding-left: 40%;
+
         }
 
 
@@ -227,6 +230,8 @@
             background: linear-gradient(to top, #221919, #938989, #3d3d3d);
 
         }
+
+        /* about-section */
 
         .section-six {
             height: 60%;
@@ -246,7 +251,6 @@
         .owner-img {
             height: 60%;
             width: 39%;
-            background-color: aqua;
             margin-left: 40%;
             margin-top: 7%
         }
@@ -261,8 +265,72 @@
         .text-client {
             height: 80%;
             width: 70%;
-            background-color: #221616;
+            background-color: #e1e1e1;
             margin-top: 3%
+        }
+
+        .section-seven {
+            height: 60%;
+            width: 100%;
+            background: linear-gradient(to top, #221919, #938989, #3d3d3d);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 5%;
+        }
+
+        .contact-box {
+            height: 80%;
+            width: 30%;
+            background:linear-gradient(to top, rgb(70, 51, 51) ,rgb(94, 80, 80), black);
+            border: 2px solid rgb(226, 142, 142);
+            border-radius: 3%;
+        }
+
+        .shop-name {
+            height: 33%;
+            width: 100%;
+            display: flex;
+            font-size: 16px;
+            color: rgb(235, 128, 128);
+        }
+
+        /* logo */
+        .logo {
+            height: 100px;
+            width: 80px; 
+            padding-left: 3%;
+        }
+
+        .contact-no {
+            height: 25%;
+            width: 100%;
+            display: flex;
+           
+        }
+
+        .email-id {
+            height: 25%;
+            width: 100%;
+            display: flex;
+       
+        }
+
+        /* img-icons */
+        /* contact & Email */
+        .img-icons {
+            height: 45px;
+            width: 40px;
+          color: #357a8b;
+          padding-left: 19%;
+           
+
+        }
+
+        .location-box {
+            height: 80%;
+            width: 40%;
+            background-color: rgb(209, 209, 209);
         }
     </style>
 </head>
@@ -389,6 +457,7 @@
             </div>
         </div>
         <!-- services-section -->
+         <!-- small-cards -->
 
         <div class="service-name">
             Services
@@ -403,7 +472,7 @@
                 <div class="box-01">
                     <img class="img-hw" src="https://miro.medium.com/v2/resize:fit:1024/1*bl-wWXVObXOYa4aEZUxiRA.jpeg"
                         alt="">
-                        <b class="card-text-name"> hi</b>
+                    <b class="card-text-name"> hi</b>
                 </div>
                 <div class="box-01">
                     <img class="img-hw"
@@ -456,11 +525,10 @@
                 <div class="box-01">
                     <img class="img-hw" src="https://i.pinimg.com/736x/31/b5/15/31b51531019c2837806c4ea4f02edde1.jpg"
                         alt="">
-                        
+
                 </div>
                 <div class="box-01">
-                    <img class="img-hw" src="https://www.eventzfly.com/wp-content/uploads/2024/03/NC_13-1.jpg" 
-                    alt="">
+                    <img class="img-hw" src="https://www.eventzfly.com/wp-content/uploads/2024/03/NC_13-1.jpg" alt="">
                 </div>
                 <div class="box-01">
                     <img class="img-hw"
@@ -496,14 +564,73 @@
             About
         </div>
         <div class="section-six">
+
             <div class="about-box-1">
-                <div class="owner-img"></div>
+                <div class="owner-img">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTRzMl83Qyvvf7FRe8otS_SkjJLmBaAeeLNG3dNEi7Nv0LrhMBIDVGxRS0CNzkPuCNMLj0&usqp=CAU"
+                        alt="">
+                </div>
             </div>
 
             <div class="about-box-2">
                 <div class="text-client"></div>
             </div>
         </div>
+
+        <!-- contact-section -->
+        <div class="service-name">
+            Contact
+        </div>
+
+        <div class="section-seven">
+
+            <div class="contact-box">
+
+                <div class="shop-name">
+                    <span>
+                        <!-- shop-logo -->
+                        <img class="logo" src="./image/logo-website.png" alt="">
+                    </span>
+                    <span>
+                        <h1 style="padding-left: 8px;"> Ganesh Decor & <br> Events</h1>
+                    </span>
+                </div>
+                <!-- contact no -->
+                <div class="contact-no">
+                    <span>
+                        <img class="img-icons" src="./image/icons8-call-64.png" alt="">
+                    </span>
+                    <span>
+                        <h2 style="font-size: 18px; color: aliceblue; padding-left: 5%;">Talk to Our Client Support Team 
+                            <b style="font-size: 25px; padding-left: 15px; color: aliceblue;"> 9049668439</b>
+                        </h2>
+                        
+                    </span>
+
+                </div>
+                <!-- Email-id -->
+                <div class="email-id">
+                    <span>
+                        <img class="img-icons" src="./image/icons8-email-50.png" alt="">
+                    </span>
+                    <span>
+                        <h2 style="font-size: 18px; color: aliceblue; padding-left: 5%;">Write to us about your needs
+                            <br>
+                            <b style="font-size: 20px; color: aliceblue;"> melodiaeventmanagement@gmail.com</b>
+                        </h2>
+                    </span>
+
+                </div>
+
+
+
+            </div>
+
+            <!-- Location-->
+            <div class="location-box"></div>
+
+        </div>
+
 
 
 
