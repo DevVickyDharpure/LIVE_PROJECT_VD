@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .main-container {
+            height: 100vh;
+            width: 100vw;
+            background-color: #161616;
+        }
+
+        .section-one {
+            height: 100%;
+            width: 100%;
+            background: linear-gradient(to top, #413434, #938989, #454444);
+
+        }
+
+        .card-section {
+            height: 45%;
+            width: 100%;
+            background-color: #c6455f00;
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+        }
+
+        .card-section-1 {
+            height: 45%;
+            width: 100%;
+            background-color: #c6455f00;
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+        }
+
+        h1 {
+            text-align: center;
+            font-size: 200%;
+            color: rgb(213, 123, 123);
+        }
+
+        .box-1 {
+            background-color: #e8eaea;
+            height: 300px;
+            width: 240px;
+            display: flex;
+            flex-direction: column;
+            border-radius: 8px;
+
+
+        }
+
+        /* card-img */
+        .img-hw {
+            height: 57%;
+            width: 85%;
+            margin-left: 8%;
+            margin-top: 6%;
+            border-radius: 5px;
+        }
+
+        /* card-text */
+        .card-text-name {
+            text-align: center;
+
+        }
+
+        .button-book-now {
+            height: 33px;
+            width: 170px;
+            margin-top: 6%;
+            margin-left: 17%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 18px;
+            background: linear-gradient(to right, #87BCFC, #87BCFC, #507096);
+            border: none;
+            border-radius: 4px;
+        }
+
+
+        /* media-------------------------------------- 425 */
+        /* mobile-------------------screen */
+        @media only screen and (max-width:425px) {
+            .section-one {
+                height: 390%;
+                width: 100%;
+                background: linear-gradient(to top, #413434, #938989, #454444);
+
+
+            }
+
+            .card-section {
+                height: 50%;
+                flex-direction: column;
+                gap: 2%;
+
+            }
+
+            .card-section-1 {
+                height: 50%;
+                flex-direction: column;
+                gap: 2%;
+                margin-top: 8%;
+            }
+
+            .box-1 {
+                background-color: #eaf6f6;
+                height: 280px;
+                width: 220;
+
+            }
+
+        }
+
+        @media only screen and (max-width:770px) {
+            .section-one {
+                height: 100%;
+                width: 100%;
+                background: linear-gradient(to top, #413434, #938989, #454444);
+
+
+            }
+
+            .card-section {
+                height: 50%;
+                justify-content: space-around;
+
+
+            }
+
+            .card-section-1 {
+                height: 40%;
+
+            }
+
+            .box-1 {
+                background-color: #eaf6f6;
+                height: 260px;
+                width: 180px;
+            }
+
+            .button-book-now {
+                height: 30px;
+                width: 150px;
+                margin-left: 10%;
+                font-size: 15px;
+
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="main-container">
+
+        <div class="section-one">
+            <h1>Sky Shots </h1>
+
+            <div class="card-section">
+
+               <div class="box-1">
+                    <img class="img-hw" class="img-hw" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTjek96trkBL6FSXqySzyFNSjslemx1UQENOLVJjs8HrsYwZIStG4f_ckgcDdbHEJrpR9s&usqp=CAU" alt="">
+                    <br>
+
+                    <button class="button-book-now">Book-Now</button>
+                </div>
+                <div class="box-1">
+                    <img class="img-hw" class="img-hw" src="https://image.cdn.shpy.in/337348/SKU-1828_0-1739700507355.jpg?width=600&format=webp" alt="">
+                    <br>
+                    <button class="button-book-now">Book-Now</button>
+                </div>
+                <div class="box-1">
+                    <img class="img-hw" class="img-hw" src="https://image.cdn.shpy.in/337348/SKU-1808_0-1739082657175.jpg?width=600&format=webp" alt="">
+                    <br>
+                    <button class="button-book-now">Book-Now</button>
+                </div>
+                <div class="box-1">
+                    <img class="img-hw" class="img-hw" src="https://www.patratravels.com/images/vehicles/wedding-cars/audi-a6.jpg" alt="">
+                    <br>
+                    <button class="button-book-now">Book-Now</button>
+                </div>
+            </div>
+
+
+            <div class="card-section-1">
+                <div class="box-1">
+                    <img class="img-hw" class="img-hw" src="https://image.cdn.shpy.in/337348/SKU-1809_1-1739082722820.jpg?width=600&format=webp" alt="">
+                    <br>
+
+                    <button class="button-book-now">Book-Now</button>
+                </div>
+                <div class="box-1">
+                    <img class="img-hw" class="img-hw" src="https://3.imimg.com/data3/KH/SQ/MY-9911600/media-bloomingflowers-in-images-products-458742-20140429165945-500x500.jpg" alt="">
+                    <br>
+                    <button class="button-book-now">Book-Now</button>
+                </div>
+                <div class="box-1">
+                    <img class="img-hw" class="img-hw" src="https://floristchain.com/wp-content/uploads/2016/06/wedding-car-decoration-49.jpg" alt="">
+                    <br>
+                    <button class="button-book-now">Book-Now</button>
+                </div>
+                <div class="box-1">
+                    <img class="img-hw" class="img-hw" src="https://i.pinimg.com/736x/61/04/3a/61043aec3071d0fab4d8d69557eba56a.jpg" alt="">
+                    <br>
+                    <button class="button-book-now">Book-Now</button>
+                </div>
+            </div>
+
+
+
+
+        </div>
+        <div class="section-one"></div>
+    </div>
+</body>
+
+</html>
