@@ -4,43 +4,49 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Neuton:ital,wght@0,200;0,300;0,400;0,700;0,800;1,400&display=swap"
+        rel="stylesheet">
     <title>Document</title>
     <style>
         .main-container {
             height: 100vh;
             width: 100vw;
         }
-
-        /* header-------------start----- */
+        /* header-start---------------- */
         .header {
             height: 8%;
             width: 100%;
             background: linear-gradient(to right, #94EEEE, #548888);
-            display: flex;
             position: fixed;
+            display: flex;
+            flex-direction: row;
         }
 
-        .nav-box-1 {
-
+        .header-1 {
+            background-color: rgba(240, 248, 255, 0);
             width: 50%;
             font-size: 40px;
             padding-top: 0.7%;
             padding-left: 7%;
+            font-family: Georgia, 'Times New Roman', Times, serif;
         }
 
-        .nav-box-2 {
-
+        .header-2 {
             width: 50%;
             padding-top: 1.5%;
             padding-left: 19%;
             font-size: 20px;
             display: flex;
+
             gap: 50px;
         }
 
-        /* -----------------header----end--------- */
+/* header-----------------end */
 
-        /* -------------------section--one--start----------- */
+/* Section-one-start------------------------- */
         .section-one {
             height: 100%;
             width: 100%;
@@ -52,45 +58,28 @@
         .black-over {
             height: 100%;
             width: 100%;
-            background-color: rgba(0, 0, 0, 0.353);
+            background-color: rgba(0, 0, 0, 0.513);
         }
 
-        /* ---Home-page-text----start---- */
-        .home-text-1 {
-            padding-top: 8%;
-            padding-left: 3%;
-            color: antiquewhite;
-            font-size: 25px;
-        }
-
-        .shop-name {
-            padding-top: 7%;
-            padding-left: 33%;
-            color: rgb(211, 125, 125);
-            font-size: 48px;
-            text-shadow: 2px 2px rgb(197, 67, 67);
-
-        }
-
-        .shop-name-1 {
-            padding-left: 26%;
-            color: antiquewhite;
+        .home-text {
+            padding-left: 23%;
             font-size: 38px;
-            text-shadow: 2px 2px rgb(197, 113, 67);
+            padding-bottom: 10%;
+            color: aliceblue;
+            text-shadow: 2px 2px rgb(249, 79, 79);
+
         }
 
-        /* ---Home-page-text----end */
         .button-homepage {
             height: 30px;
-            width: 18%;
-            font-size: 21px;
-            margin-left: 40%;
+            width: 20%;
+            font-size: 20px;
+            margin-left: 22%;
             background: linear-gradient(to right, #3D7C8B, #6AD6F1, #3D7C8B);
             border: none;
             border-radius: 5%;
         }
-
-        /* -------------------section--one--end----------- */
+        /* Section-one-end--------------------- */
 
         /* section-two-start----------------------- */
 
@@ -117,8 +106,8 @@
         }
 
         /* section-two-end----------------------- */
+        
 
-        /*section-three---start-----  */
         .section-three {
             height: 60%;
             width: 100%;
@@ -184,6 +173,8 @@
             font-size: 18 px;
         }
 
+        /* section-three */
+        /* buutton */
         .text-box-button {
             height: 30px;
             width: 200px;
@@ -193,7 +184,6 @@
             border-radius: 2%;
         }
 
-        /* section-three---end----- */
         .service-name {
 
             font-size: 40px;
@@ -268,8 +258,6 @@
 
         }
 
-        /* section-four--end------------- */
-        /* section-five--start---------- */
 
         .section-five {
             height: 100%;
@@ -278,9 +266,6 @@
 
         }
 
-        /* section--five--end------- */
-
-        /* section---six---start----- */
         .section-six {
             height: 60%;
             width: 100%;
@@ -324,291 +309,121 @@
             padding-right: 2%;
         }
 
-        /* section-----seven--end */
+        .section-seven {
+            height: 60%;
+            width: 100%;
+            background: linear-gradient(to top, #221919, #938989, #3d3d3d);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 5%;
 
-        /*-------- meadia-quary-------- */
-        @media (min-width:300px) and (max-width:430px) {
+        }
 
-            /* header-start */
-            .header {
-                height: 8%;
-                width: 93.7%;
-                flex-direction: column;
-            }
+        .contact-box {
+            height: 80%;
+            width: 30%;
+            background: linear-gradient(to top, #3e2929, #938989, #775b5b);
+            border: 2px solid rgb(176, 69, 69);
+            border-radius: 8px;
 
-            .nav-box-1 {
-                font-size: 20px;
-                padding-left: 5%;
-            }
+        }
 
-            .nav-box-2 {
-                padding-top: 2.9%;
-                padding-left: 25%;
-                font-size: 15px;
-                gap: 15px;
-            }
+        .shop-name {
+            height: 30%;
+            width: 100%;
+            display: flex;
+        }
 
-            /* header-end */
-            /* section-one--start */
-            .section-one {
-                height: 80%;
-            }
+        .logo {
+            height: 80px;
+            width: 65px;
+            margin-left: 4%;
+        }
 
-            .home-text-1 {
-                padding-top: 22%;
-                font-size: 18px;
-            }
+        .contact-no {
+            height: 23%;
+            width: 100%;
+            display: flex;
+        }
 
-            .shop-name {
-                padding-top: 17%;
-                padding-left: 4%;
-                font-size: 38px;
-            }
+        .email-id {
+            height: 25%;
+            width: 100%;
+            display: flex;
+        }
 
-            .shop-name-1 {
-                padding-left: 2%;
-                text-align: center;
-                font-size: 28px;
-            }
+        /* icons */
+        .icons-img {
+            height: 50px;
+            width: 40px;
+            margin-left: 2%;
+            padding-top: 3%;
+        }
 
-            .button-homepage {
-                width: 28%;
-                font-size: 18px;
-                margin-left: 37%;
+        .contact-text {
+            margin-top: 2%;
+            padding-left: 2%;
+            font-size: 20px;
+        }
 
-            }
-
-            /* --section--two-start--- */
-            .section-two {
-                height: 52%;
-                width: 100%;
-                display: grid;
-                grid-template-columns: 1fr 1fr;
-
-
-            }
-
-            .card-clients {
-                height: 90%;
-                width: 90%;
-                font-size: 25px;
-                margin-left: 9px;
-
-            }
-
-            .clients-card-text {
-                font-size: 18px;
-            }
-
-            /* section--two---end--- */
-
-            /* section--three--start---- */
-            .section-three {
-                height: 175%;
-                display: flex;
-                flex-direction: column;
-
-            }
-
-            .box-1 {
-                height: 70%;
-                width: 100%;
-                display: flex;
-                flex-direction: column;
-            }
-
-            .mini-img-1 {
-                height: 45%;
-                width: 100%;
-
-            }
-
-            .section-3-1-img {
-                height: 40%;
-                width: 70%;
-                padding-top: 10%;
-                padding-left: 15%;
-
-            }
-
-            .section-3-2-img {
-                height: 36%;
-                width: 70%;
-                padding-top: 10%;
-                padding-left: 15%;
-
-            }
+        .number {
+            font-size: 25px;
+        }
 
 
-            .mini-img-2 {
-                height: 50%;
-                width: 100%;
-
-            }
-
-            .box-2 {
-                height: 50%;
-                width: 100%;
-                display: flex;
-                align-items: center;
-                padding-left: 5%;
-                margin-top: -20%;
-
-            }
-
-            .text-box {
-                height: 75%;
-                width: 90%;
-                background-color: rgba(255, 255, 255, 0.883);
-                text-align: center;
-                border-radius: 4px;
-            }
-
-            .marketing-text-1 {
-                font-size: 20px;
-            }
-
-            .marketing-text-2 {
-                font-size: 15 px;
-            }
-
-
-            .text-box-button {
-                height: 30px;
-                width: 150px;
-                font-size: 15px;
-                background: linear-gradient(to right, #3F7F8F, #61C6DF, #3F7F8F);
-
-            }
-
-            /* section--three-end------------ *
-            /* section---four----start----------- */
-
-            .service-name {
-                font-size: 27px;
-            }
-
-            .section-four {
-                height: 200%;
-                width: 100%;
-                background: linear-gradient(to top, #413434, #938989, #454444);
-
-            }
-
-            .card-section-1 {
-                height: 100%;
-                width: 100%;
-                background-color: #c6455f00;
-                display: flex;
-                flex-direction: column;
-                justify-content: space-evenly;
-                align-items: center;
-            }
-
-            .card-section-2 {
-                height: 100%;
-                width: 100%;
-                display: flex;
-                flex-direction: column;
-                justify-content: space-evenly;
-                align-items: center;
-                background: linear-gradient(to top, #413434, #938989, #413434);
-
-            }
-
-            .box-01 {
-                background-color: #e8eaea;
-                height: 320px;
-                width: 260px;
-                display: flex;
-                flex-direction: column;
-                border-radius: 8px;
-
-
-            }
-
-            /* card-img */
-            .img-hw {
-                height: 57%;
-                width: 85%;
-                margin-left: 8%;
-                margin-top: 6%;
-                border-radius: 5px;
-            }
-
-            /* card-text */
-            .card-text-name {
-                text-align: center;
-
-            }
-
-            .button-see-more {
-                height: 33px;
-                width: 170px;
-                margin-top: 5%;
-                margin-left: 17%;
-                display: flex;
-                justify-content: center;
-                align-items: center;
-                font-size: 18px;
-                background: linear-gradient(to right, #87BCFC, #87BCFC, #507096);
-                border: none;
-                border-radius: 4px;
-
-            }
-
-            .section-five {
-                height: 200%;
-                width: 100%;
-                background: linear-gradient(to top, #221919, #938989, #3d3d3d);
-
-            }
-
-
-
+        .location-box {
+            height: 80%;
+            width: 40%;
+            background-color: rgb(5, 5, 4);
         }
     </style>
 </head>
 
 <body>
-    <!-- -----------------main-container -->
-    <!-- ----------------------------Start -->
+    <!-- main-body -->
     <div class="main-container">
-        <!-- ----- header-start ------- -->
+        <!-- header -->
         <div class="header">
-            <div class="nav-box-1">
+            <div class="header-1">
                 <span>Ganesh Decor & Events </span>
-            </div>
-            <div class="nav-box-2">
 
+            </div>
+            <!-- nev-button -->
+            <div class="header-2">
                 <span> Home </span>
                 <span> About </span>
                 <span> Services </span>
                 <span> Contact </span>
             </div>
         </div>
-        <!-- ----- header-end ------- -->
 
-        <!--section-one---------start----- -->
+
         <div class="section-one">
             <div class="black-over">
                 <!-- home-page text -->
                 <span>
-                    <h3 class="home-text-1"> Katol's #1 Exclusive Event Company</h3>
+                    <h3 style="padding-top: 8%; padding-left: 4%; font-size: 25px; color: antiquewhite;"> Katol's #1
+                        Exclusive Event Company</h3>
+                    <h1
+                        style="padding-top:7%; padding-left: 30%; font-size: 50px; color: rgb(225, 137, 137); font-family:Alegreya;   text-shadow: 2px 2px rgb(32, 31, 31);">
+                        Ganesh Decor & Events
 
-                    <h1 class="shop-name"> Ganesh Decor & Events</h1>
+                        <h2 class="home-text">All types of Deocration &
+                            Events are available
+                            <br>
+                            <!-- home-page-contact-button -->
+                            <button class="button-homepage"> Contact us</button>
+                        </h2>
+                    </h1>
 
-                    <h1 class="shop-name-1">All types of Deocration Events are available</h1>
-                    <button class="button-homepage"> Contact us</button>
+
                 </span>
             </div>
         </div>
-        <!--section-one---------end----- -->
-
-        <!-- section-two---------start--- -->
+        <!--clients page -->
         <div class="section-two">
 
-            <!-- clients-cards----------start -->
             <span class="card-clients">
 
                 <h1> 12+
@@ -637,12 +452,9 @@
                     <b class="clients-card-text">Customer Rating</b>
                 </h1>
             </span>
-            <!-- clients-cards----------end -->
         </div>
-        <!-- section-two---------end--- -->
-        <!-- section--three------start -->
 
-        <!-- section--three------end -->
+        <!-- img & information -->
         <div class="section-three">
 
             <div class="box-1">
@@ -673,33 +485,34 @@
 
 
                         <b class="marketing-text-2">Choose Ganesh Decor & Event Management Company for
-                            your premium destination wedding in Kerala,
-                            India. Whether you dream of a beach wedding in Katol or a backwater resort celebration,
+                            your premium <br> destination wedding in Kerala,
+                            India. Whether you dream of a beach <br> wedding in Katol or a backwater resort celebration,
                             we
                             will bring it to life, infusing rich traditions. We also offer venue selection assistance
                             and booking services for an easier planning process. Our track record includes clients
-                            from
+                            <br>from
                             India and abroad, making us your ideal partner for a dream destination wedding in Katol,
                             India</b>
                     </span>
                     <br><br>
                     <!-- button Whatapp & call -->
                     <pre><button class="text-box-button">Talk to Export</button>         <button class="text-box-button">Whatapp us</button></pre>
+
                 </div>
-
             </div>
-
         </div>
         <!-- services-section -->
+
         <div class="service-name">
             Services
         </div>
-        <!-- -------section-four------start ------- -->
+
         <div class="section-four">
 
-            <!-- events-img-card-box-------start -->
+            <!-- flex box -->
+            <!-- card-box -->
             <div class="card-section-1">
-
+                <!-- Cars-line-one -->
                 <div class="box-01">
                     <img class="img-hw" src="https://miro.medium.com/v2/resize:fit:1024/1*bl-wWXVObXOYa4aEZUxiRA.jpeg"
                         alt="">
@@ -732,7 +545,7 @@
                 </div>
             </div>
             <div class="card-section-2">
-
+                <!-- Card-line-two -->
                 <div class="box-01">
                     <img class="img-hw"
                         src="https://image.wedmegood.com/resized/720X/uploads/project/315380/1755447988_13.jpg?crop=83,117,1840,1035"
@@ -767,6 +580,8 @@
                 </div>
             </div>
         </div>
+        <!-- flex box -->
+        <!-- card-box -->
         <div class="section-five">
             <div class="card-section-1">
                 <!-- Card-line-three -->
@@ -832,13 +647,14 @@
                     <button class="button-see-more">See More</button>
                 </div>
             </div>
+
         </div>
 
         <!-- about-section -->
+        <!-- owner-information-Experience -->
         <div class="service-name">
             About
         </div>
-        <!-- section---six--start----- -->
         <div class="section-six">
             <div class="about-box-1">
                 <div class="owner-img"></div>
@@ -866,11 +682,52 @@
                 </div>
             </div>
         </div>
-        <!-- section--six---end---- -->
+        <!-- contact-us section -->
+        <div class="service-name">
+            Contact
+        </div>
+        <div class="section-seven">
+            <!-- contact no  -->
+            <!-- Email-id -->
+            <div class="contact-box">
+                <span class="shop-name">
+
+                    <img class="logo" src="./assets/image/logo.png" alt="">
+                    <span>
+                        <h1>Ganesh Decor
+                            & <br> Events</h1>
+                    </span>
+                </span>
+
+                <span class="contact-no">
+                    <img class="icons-img" src="./assets/image/icons8-call-50.png" alt="">
+                    <span class="contact-text">Talk to Our Client Support Team
+                        <br>
+                        <b class="number">9049668439</b>
+
+                    </span>
+                </span>
+
+                <span class="email-id">
+                    <img class="icons-img" src="./assets/image/icons8-email-64.png" alt="">
+                    <span class="contact-text">
+                        Write to us about your needs
+                        <br>
+                        <b>melodiaeventmanagement@gmail.com</b>
+                    </span>
+                </span>
+            </div>
+
+
+
+
+            <!-- location-section -->
+            <div class="location-box"></div>
+        </div>
+
+
 
     </div>
-    <!-- ----------------main-container -->
-    <!--  -----------------------------End -->
 </body>
 
 </html>
