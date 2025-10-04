@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .main-container {
+            height: 100vh;
+            width: 100vw;
+            background-color: #161616;
+        }
+
+        /* section-----one----start-------- */
+        .section-one {
+            height: 50%;
+            width: 100%;
+            background: linear-gradient(to top, #413434, #938989, #454444);
+
+        }
+
+        .card-section-1 {
+            height: 45%;
+            width: 100%;
+            background-color: #c6455f00;
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+        }
+
+
+
+        h1 {
+            text-align: center;
+            font-size: 200%;
+            color: rgb(213, 123, 123);
+        }
+
+        .box-1 {
+            background-color: #e8eaea;
+            height: 300px;
+            width: 240px;
+            display: flex;
+            flex-direction: column;
+            border-radius: 8px;
+            margin-top: 105px;
+
+
+        }
+
+        /* card-img */
+        .img-hw {
+            height: 57%;
+            width: 85%;
+            margin-left: 8%;
+            margin-top: 6%;
+            border-radius: 5px;
+        }
+
+        /* card-text */
+        .card-text-name {
+            text-align: center;
+
+        }
+
+        .button-book-now {
+            height: 33px;
+            width: 170px;
+            margin-top: 6%;
+            margin-left: 17%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 18px;
+            background: linear-gradient(to right, #87BCFC, #87BCFC, #507096);
+            border: none;
+            border-radius: 4px;
+        }
+
+        /* section-----one----end-------- */
+        .section-two {
+            height: 50%;
+            width: 100%;
+            background: linear-gradient(to top, #454444, #938989, #413434);
+
+        }
+
+        .box-2 {
+            background-color: #e8eaea;
+            height: 300px;
+            width: 240px;
+            display: flex;
+            flex-direction: column;
+            border-radius: 8px;
+            margin-top: 205px;
+
+
+        }
+
+        .card-section-2 {
+            height: 45%;
+            width: 100%;
+            background-color: #c6455f00;
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+        }
+
+
+
+        /* media-------------------------------------- 425 */
+        /* mobile-------------------screen */
+        @media only screen and (max-width:430px) {
+            .section-one {
+                display: flex;
+                flex-direction: column;
+                height: auto;
+
+
+            }
+
+            .card-section-1 {
+                height: 100%;
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+
+                gap: 22px;
+
+            }
+
+
+            .box-1 {
+                background-color: #e8eaea;
+                height: 280px;
+                width: 240px;
+                display: flex;
+                flex-direction: column;
+                border-radius: 8px;
+                margin-top: -13px;
+                margin-left: 5px;
+
+
+
+            }
+
+            /* card-img */
+            .img-hw {
+                height: 57%;
+                width: 85%;
+                margin-left: 8%;
+                margin-top: 6%;
+                border-radius: 5px;
+            }
+
+            /* card-text */
+            .card-text-name {
+                text-align: center;
+
+            }
+
+            .button-book-now {
+                height: 33px;
+                width: 170px;
+                margin-top: 6%;
+                margin-left: 17%;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                font-size: 18px;
+                background: linear-gradient(to right, #87BCFC, #87BCFC, #507096);
+                border: none;
+                border-radius: 4px;
+            }
+
+            /* section-----one----end-------- */
+            .section-two {
+                height: auto;
+                display: flex;
+
+
+
+            }
+
+            .card-section-2 {
+                margin-top: 30px;
+                height: 100%;
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+                gap: 22px;
+                /* padding-top: 95px; */
+
+            }
+
+            .box-2 {
+
+                background-color: #e8eaea;
+                height: 280px;
+                width: 240px;
+                display: flex;
+                flex-direction: column;
+                border-radius: 8px;
+                margin-top: -13px;
+                margin-left: 5px;
+
+            }
+
+
+
+        }
+    </style>
+</head>
+
+<body>
+    <div class="main-container">
+
+        <div class="section-one">
+            <h1>Dj & Light</h1>
+
+            <div class="card-section-1">
+
+                <div class="box-1">
+                    <img class="img-hw"
+                        src="https://i.pinimg.com/736x/8b/6c/bd/8b6cbddb608fd551d9487d5d4b04f807.jpg " alt="">
+                    <br>
+                    <button class="button-book-now">Book-Now</button>
+                </div>
+                <div class="box-1">
+                    <img  class="img-hw"
+                        src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQH-XDdgT8Ac1-40st_GjJqmlFoyR5BFXm9MA&s"
+                        alt="">
+                    <br>
+                    <button class="button-book-now">Book-Now</button>
+                </div>
+                <div class="box-1">
+                    <img  class="img-hw"
+                        src="https://cdn0.weddingwire.in/vendor/1911/3_2/960/jpeg/dj-victoo-4_15_241911-1565246117.jpeg"
+                        alt="">
+                    <br>
+                    <button class="button-book-now">Book-Now</button>
+                </div>
+                <div class="box-1">
+                    <img class="img-hw"
+                        src="https://5.imimg.com/data5/SELLER/Default/2020/12/PD/HT/BR/32942026/wedding-dj.jpg" alt="">
+                    <br>
+                    <button class="button-book-now">Book-Now</button>
+                </div>
+
+            </div>
+
+
+
+
+
+
+
+        </div>
+        <div class="section-two">
+            <div class="card-section-2">
+                <div class="box-2">
+                    <img  class="img-hw"
+                        src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSpf6qco5eAukuL9kJKk7EAWi3wPW4oHOGuSg&s"
+                        alt="">
+                    <br>
+
+                    <button class="button-book-now">Book-Now</button>
+                </div>
+                <div class="box-2">
+                    <img class="img-hw"
+                        src="https://content.jdmagicbox.com/comp/bareilly/t3/9999px581.x581.230329005026.p5t3/catalogue/manish-dj-and-lighting-bareilly-entertainment-agencies-x5dityf8dj.jpg"
+                        alt="">
+                    <br>
+                    <button class="button-book-now">Book-Now</button>
+                </div>
+                <div class="box-2">
+                    <img class="img-hw"
+                        src="https://i.pinimg.com/236x/03/0f/37/030f3763e7a849246e068489072bb67f.jpg"
+                         alt="">
+                    <br>
+                    <button class="button-book-now">Book-Now</button>
+                </div>
+                <div class="box-2">
+                    <img  class="img-hw"
+                        src="https://content.jdmagicbox.com/v2/comp/nashik/x5/0253px253.x253.250530225740.a3x5/catalogue/triples-sound-wala-nashik-disc-jockey-0uon0p7ewx.jpg"
+                        alt="">
+                    <br>
+                    <button class="button-book-now">Book-Now</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
