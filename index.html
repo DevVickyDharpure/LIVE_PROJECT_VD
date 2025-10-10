@@ -1,0 +1,895 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <style>
+        body {
+            padding: 0;
+            margin: 0;
+
+        }
+
+        .main-container {
+            height: 100vh;
+            width: 100vw;
+            background: linear-gradient(to right, #e2fff5, aliceblue, aliceblue, #d7fff2);
+
+        }
+
+        /* ------  section-one-start ------- */
+        .section-one {
+            height: 80%;
+            width: 100%;
+            /* background: linear-gradient(to right, #e2fff5, aliceblue, aliceblue, #d7fff2); */
+            display: flex;
+            background: linear-gradient(to right, #171717, rgb(1, 33, 61), rgb(1, 36, 64), #383b3a);
+
+        }
+
+        /* header */
+        .header {
+            height: 8%;
+            width: 100%;
+            background-color: rgb(1, 43, 78);
+            display: flex;
+            position: fixed;
+            margin-top: -7px;
+        }
+
+        .header-box-name {
+            width: 40%;
+            height: 100%;
+        }
+
+        .header-name {
+            font-size: 45px;
+            margin-left: 55px;
+            color: aliceblue;
+            text-shadow: 2px 1px rgb(255, 227, 227);
+        }
+
+        .header-button {
+            width: 60%;
+            padding-top: 1.5%;
+            padding-left: 340px;
+            font-size: 20px;
+            display: flex;
+            gap: 40px;
+        }
+
+        a {
+            text-decoration: none;
+            color: rgb(255, 255, 255);
+        }
+
+        /*  */
+        /*  */
+        .class-1 {
+            height: 100%;
+            width: 100%;
+            display: flex;
+
+
+        }
+
+        .section-1-box-1 {
+            height: 100%;
+            width: 50%;
+            /* background-color: aliceblue; */
+        }
+
+        .home-skills {
+            font-size: 50px;
+            padding-top: 160px;
+            padding-left: 160px;
+            color: rgb(50, 205, 205);
+            animation: homeskillsAnimation;
+            animation-duration: 2s;
+            animation-iteration-count: 1;
+            animation-timing-function: cubic-bezier(0.46, -0.02, 0, 1.04);
+            /* animation-delay: 0s; */
+            animation-direction: alternate-reverse;
+
+        }
+
+        @keyframes homeskillsAnimation {
+            from {}
+
+            to {
+                transform: translateX(-610px);
+            }
+        }
+
+        .developer-home-text {
+            font-size: 20px;
+            padding-left: 160px;
+            color: antiquewhite;
+            overflow: hidden;
+            white-space: nowrap;
+
+            animation: typing 3.5s steps(40, end) forwards, blink 0.75s step-end infinite;
+        }
+
+
+
+        @keyframes typing {
+            from {
+                width: 0;
+            }
+
+            to {
+                width: 70%;
+            }
+        }
+
+        @keyframes blink {
+            50% {
+                border-color: transparent;
+            }
+        }
+
+        .experiences-text {
+            font-size: 19px;
+            padding-left: 160px;
+            padding-top: 10px;
+            display: flex;
+            gap: 19px;
+            color: wheat;
+
+        }
+
+        .home-number-1 {
+            font-size: 35px;
+            padding-left: 65px;
+            color: rgb(255, 255, 255);
+        }
+
+        .home-number-2 {
+            font-size: 35px;
+            padding-left: 53px;
+            color: rgb(254, 254, 255);
+        }
+
+        .home-number-3 {
+            font-size: 35px;
+            padding-left: 40px;
+            color: rgb(255, 255, 255);
+        }
+
+        .home-page-button-1 {
+            height: 33px;
+            width: 135px;
+            font-size: 15px;
+            margin-left: 210px;
+            margin-top: 40px;
+            border: none;
+            background-color: rgb(0, 81, 138);
+            border-radius: 5px;
+
+        }
+
+        .home-page-button-2 {
+
+            height: 33px;
+            width: 135px;
+            font-size: 15px;
+            margin-left: 30px;
+            border: none;
+            background-color: rgb(0, 81, 138);
+            border-radius: 5px;
+
+        }
+
+
+        .section-1-box-2 {
+            height: 100%;
+            width: 50%;
+            display: flex;
+            align-items: center;
+        }
+
+        .img-box-section-1 {
+            height: 300px;
+            width: 330px;
+            background-color: #944f4f;
+            border-radius: 2px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-left: 120px;
+            margin-top: 90px;
+        }
+
+        .developer-img {
+            height: 290px;
+            width: 320px;
+        }
+
+        /* -------  section--one-end  -----*/
+
+        /* ---section-two--start -------- */
+
+        .section-two {
+            height: 80%;
+            width: 100%;
+            /* background: linear-gradient(to right, #e2fff5, aliceblue, aliceblue, #d7fff2); */
+            display: flex;
+            background: linear-gradient(to right, #171717, rgb(1, 33, 61), rgb(1, 36, 64), #383b3a);
+
+
+
+        }
+
+        .about-headline {
+            /* background-color: aliceblue; */
+            color: white;
+            font-size: 37px;
+            text-align: center;
+            padding-top: 9px;
+            /* background: linear-gradient(to right, #bebcbc, rgb(1, 33, 61), rgb(1, 36, 64), #b2b5b4); */
+            background: linear-gradient(to right, #171717, rgb(1, 33, 61), rgb(1, 36, 64), #383b3a);
+        }
+
+
+
+        /*  */
+        .about-box-1 {
+
+            width: 40%;
+            padding-top: 90px;
+            display: flex;
+            flex-direction: column;
+
+        }
+
+        /*  */
+        .img-about-section {
+            height: 320px;
+            width: 350px;
+            background-color: #a3110f;
+            border-radius: 2px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-left: 170px;
+            border-radius: 5px;
+
+        }
+
+        .developer-img-2 {
+            height: 310px;
+            width: 340px;
+        }
+
+        .codder-name {
+            padding-left: 210px;
+            font-size: 35px;
+            color: wheat;
+
+        }
+
+        .codder-skills {
+            padding-left: 180px;
+            font-size: 40px;
+            color: wheat;
+
+        }
+
+        .about-box-2 {
+            height: 100%;
+            width: 60%;
+
+        }
+
+        .text-about-box-2 {
+            font-size: 18px;
+            padding-left: 30px;
+            padding-right: 40px;
+            padding-top: 30px;
+            color: wheat;
+        }
+
+        .text-language {
+            font-size: 23px;
+            padding-left: 30px;
+            padding-right: 40px;
+            color: wheat;
+
+        }
+
+        .resume-button {
+            height: 30px;
+            width: 130px;
+            margin-left: 80px;
+            font-size: 16px;
+            border-radius: 3px;
+            border: none;
+            background-color: rgb(0, 81, 138);
+            color: #ffffff;
+        }
+
+        .about-skills {
+
+            font-size: 40px;
+            text-align: center;
+            color: wheat;
+
+        }
+
+        .card-container {
+            height: 240px;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-evenly;
+
+        }
+
+        .skills-card {
+            height: 180px;
+            width: 220px;
+            background-color: rgba(3, 156, 154, 0.59);
+            border-radius: 19px;
+            margin-top: 17px;
+            transition: 0.2s transform 0.2s;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .skills-card:hover {
+            transform: scale(1.1);
+            box-shadow: 0 0 15px rgb(13, 65, 170);
+        }
+
+        .skills-icons-1 {
+            height: 55px;
+            width: 60px;
+            padding-left: 82px;
+        }
+
+        .skills-icons-2 {
+            height: 60px;
+            width: 60px;
+            padding-left: 73px;
+        }
+
+        .skills-text-box {
+            text-align: center;
+            padding-top: 10px;
+            color: wheat;
+        }
+
+        .long-text {
+            color: #d7fff2;
+            font-size: 15px;
+            text-align: center;
+        }
+
+
+
+
+
+
+
+        /* ----section-two--end --- */
+
+        .section-three {
+            height: 100%;
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            background: linear-gradient(to right, #171717, rgb(1, 33, 61), rgb(1, 36, 64), #383b3a);
+        }
+
+        .project-name {
+            margin-top: -36px;
+            width: 100%;
+            font-size: 35px;
+            text-align: center;
+            color: white;
+             background: linear-gradient(to right, #171717, rgb(1, 33, 61), rgb(1, 36, 64), #2a2c2b);
+
+        }
+
+        .project-opction {
+            width: 100%;
+            height: 7%;
+            padding-left: 490px;
+            padding-top: 30px;
+
+
+
+
+        }
+
+        .opction-button {
+            height: 30px;
+            width: 150px;
+            border: none;
+            background-color: rgb(2, 2, 91);
+            font-size: 13px;
+            color: #ffffff;
+            border-radius: 15px;
+
+
+
+        }
+
+        .opction-button:hover {
+            transform: scale(1.1);
+            box-shadow: 0 0 15px rgb(10, 179, 209);
+        }
+
+        /*  */
+        /*  */
+        .section-three-box-1 {
+            height: 50%;
+            width: 100%;
+
+            display: flex;
+            justify-content: space-evenly;
+            padding-top: 30px;
+        }
+
+        .htmlcss-project-box {
+            height: 280px;
+            width: 350px;
+            background-color: #e0e0e0;
+
+        }
+         .htmlcss-project-box:hover {
+            transform: scale(1.1);
+            box-shadow: 0 0 15px rgb(10, 179, 209);
+        }
+
+        .project-box-img {
+            height: 180px;
+            width: 300px;
+            padding-left: 23px;
+            padding-top: 15px;
+        }
+
+        .project-name-card {
+            text-align: center;
+            font-size: 20px;
+            margin-top: 1px;
+            color: rgb(0, 0, 0);
+        }
+
+        .project-card-button {
+            height: 30px;
+            width: 135px;
+            margin-left: 110px;
+            border: none;
+            font-size: 15px;
+            background-color: rgb(97, 196, 54);
+            color: #e2fff5;
+            border-radius: 4px;
+            margin-top: -6px;
+        }
+
+        .section-three-box-2 {
+            height: 50%;
+            width: 100%;
+
+            display: flex;
+            justify-content: space-evenly;
+
+        }
+
+        .section-four {
+            height: 40%;
+            width: 100%;
+             background: linear-gradient(to right, #171717, rgb(1, 33, 61), rgb(1, 36, 64), #383b3a);
+            display: flex;
+            justify-content: space-evenly;
+
+
+        }
+
+        .contact-box {
+            height: 100px;
+            width: 230px;
+            background-color: rgba(245, 245, 245, 0.177);
+            margin-top: 60px;
+            text-align: center;
+            font-size: 18px;
+            border-radius: 7px;
+            border: 0 0 2px solid yellow;
+        }
+
+        .contact-box:hover {
+            transform: scale(1.1);
+            box-shadow: 0 0 15px rgb(10, 179, 209);
+        }
+
+
+
+        /*  */
+        /*  */
+        @media (max-width:430px) {
+
+            .header {
+                height: 10%;
+                flex-direction: column;
+                margin-top: 4px;
+            }
+
+            .header-box-name {
+                width: 100%;
+                height: 50%;
+            }
+
+            .header-name {
+                font-size: 29px;
+                margin-top: 10px;
+
+            }
+
+            .header-button {
+                width: 100%;
+                height: 50%;
+                padding-top: 1.9%;
+                padding-left: 20px;
+                font-size: 15px;
+                gap: 30px;
+            }
+
+
+
+            .class-1 {
+                height: 90%;
+                width: 100%;
+
+                margin-top: 80px;
+                display: flex;
+                flex-direction: column-reverse;
+
+
+            }
+
+            .section-1-box-1 {
+                height: 50%;
+                width: 100%;
+
+            }
+
+            .home-skills {
+                font-size: 30px;
+                padding-top: 0.1px;
+                padding-left: 90px;
+
+            }
+
+            .developer-home-text {
+                font-size: 15px;
+                padding-left: 8px;
+
+            }
+
+            .experiences-text {
+                font-size: 13px;
+                padding-left: 48PX;
+
+            }
+
+            .home-number-1 {
+                font-size: 35px;
+                padding-left: 45px;
+                color: rgb(4, 4, 130);
+            }
+
+            .home-number-2 {
+                font-size: 35px;
+                padding-left: 36px;
+                color: rgb(4, 4, 130);
+            }
+
+            .home-number-3 {
+                font-size: 35px;
+                padding-left: 20px;
+                color: rgb(4, 4, 130);
+            }
+
+            .home-page-button-1 {
+                height: 28px;
+                width: 115px;
+                font-size: 13px;
+                margin-left: 65px;
+                border: none;
+                background-color: rgb(0, 81, 138);
+                border-radius: 5px;
+
+            }
+
+            .home-page-button-2 {
+
+                height: 28px;
+                width: 115px;
+                font-size: 13px;
+                margin-left: 20px;
+                border: none;
+                background-color: rgb(0, 81, 138);
+                border-radius: 5px;
+
+            }
+
+
+            .section-1-box-2 {
+                height: 50%;
+                width: 100%;
+
+                display: flex;
+            }
+
+            .img-box-section-1 {
+                height: 300px;
+                width: 300px;
+                background-color: #ffffff;
+                border-radius: 200px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                margin-left: 50px;
+            }
+
+            .developer-img {
+                height: 200px;
+                width: 200px;
+            }
+
+            /*  */
+            /*  */
+            .section-two {
+                height: auto;
+                width: 100%;
+
+
+            }
+
+            .about-headline {
+
+                background-color: aliceblue;
+                font-size: 27px;
+                padding-left: 158px;
+            }
+
+            .about-text {
+                font-size: 12px;
+                padding-left: 5px;
+            }
+
+
+        }
+    </style>
+</head>
+
+<body>
+    <!-- main-container-----------start -->
+    <div class="main-container">
+        <!--------section-one--start --------->
+        <div class="section-one" id="Home">
+            <!-- header---start-- -->
+            <div class="header">
+                <div class="header-box-name">
+                    <span class="header-name"> Vicky Dharpure </span>
+                </div>
+
+                <!-- header--button----- -->
+                <div class="header-button">
+                    <span> <a href="#Home ">Home </span> </a>
+                    <span> <a href="#about">About</span> </a>
+                    <span> <a href="#project">Project</span> </a>
+                    <span> <a href="#Contact">Contact</span> </a>
+
+                </div>
+            </div>
+            <div class="class-1">
+
+                <div class="section-1-box-1">
+                    <h1 class="home-skills"> Creative Developer</h1>
+                    <p class="developer-home-text"> I create digital experiences that inspire and engage. With <br> a
+                        passion
+                        for clean design and br innovative solutions, I <br> transform ideas into beautiful, functional
+                        realities.
+                    </p>
+
+                    <div class="experiences-text">
+                        <div class="home-ex-box">
+                            <b class="home-number-1">2</b> <br>
+                            <span> Projects Completed </span>
+                        </div>
+                        <div class="home-ex-box">
+                            <b class="home-number-2">5</b><br>
+                            <span> Month Experience</span>
+                        </div>
+                        <div class="home-ex-box">
+                            <b class="home-number-3">1</b> <br>
+                            <span> Happy Clients</span>
+                        </div>
+
+                    </div>
+                    <span> <button class="home-page-button-1"> <a href="#project">View my work</a> </button> <button
+                            class="home-page-button-2"><a href="tel:8975657856">Get in Touch</a></button> </span>
+                </div>
+
+                <div class="section-1-box-2">
+                    <div class="img-box-section-1">
+                        <img class="developer-img"
+                            src="https://i.pinimg.com/736x/93/a3/1f/93a31fb17ef5db093011314de0cefea2.jpg" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!--------section-one--end--------->
+
+        <!--------section-two--start --------->
+        <div class="about-headline"> About me</div>
+
+        <!-- about-section -->
+        <div class="section-two" id="about">
+
+            <!-- skills-card-----about-section -->
+            <div class="about-box-1">
+                <div class="img-about-section">
+                    <img class="developer-img-2"
+                        src="https://i.pinimg.com/736x/93/a3/1f/93a31fb17ef5db093011314de0cefea2.jpg" alt="">
+                </div>
+                <br>
+                <b class="codder-name">Vicky S Dharpure</b>
+
+                <p class="codder-skills">Full Stack Developer </p>
+
+
+            </div>
+            <div class="about-box-2">
+                <p class="text-about-box-2">I am a Full-Stack Developer focused on building dynamic and user-friendly
+                    web <br> applications. I work
+                    with both front-end and back-end technologies to develop <br> seamless digital experiences. My goal
+                    is to
+                    deliver efficient, responsive, and high- <br> performing solutions.
+                </p>
+                <p class="text-language">Language : Marathi, Hindi, English
+                </p>
+                <button class="resume-button">Resume</button>
+                <p class="about-skills"> My Skills
+                </p>
+
+                <div class="card-container">
+                    <div class="skills-card">
+                        <img class="skills-icons-1" src="https://img.icons8.com/?size=50&id=wsixpbozZFBy&format=png"
+                            alt="">
+
+                        <b class="skills-text-box"> Html / Css</b>
+                        <p class="long-text">Together, HTML and CSS form the foundation for creating visually appealing and structured web pages.</p>
+                    </div>
+                    <div class="skills-card">
+                        <img class="skills-icons-2" src="https://img.icons8.com/?size=80&id=67375&format=png" alt="">
+                        <b class="skills-text-box"> Responsive Web Design</b>
+                        <p class="long-text">Designing mobile-friendly websites that adapt to various screen sizes and
+                            deliver excellent user experience.</p>
+                    </div>
+                    <div class="skills-card">
+                        <img class="skills-icons-2" src="https://img.icons8.com/?size=64&id=Nkym0Ujb8VGI&format=png"
+                            alt="">
+                        <b class="skills-text-box"> JavaScript</b>
+                        <p class="long-text">JavaScript is a dynamic scripting language primarily used to add interactive features and functionality to web pages. </p>
+                    </div>
+                </div>
+
+
+
+            </div>
+
+        </div>
+        <!--------section-two--end --------->
+
+        <!--------section-three--start --------->
+        <br><br>
+        <div class="project-name" id="project">Project</div>
+        <div class="section-three">
+            <!--  -->
+            <div class="project-opction">
+                <button class="opction-button">HTML / CSS</button>
+                <button class="opction-button">LIVE-PROJECT</button>
+                <button class="opction-button">DESING PROJECT</button>
+            </div>
+            <!--  -->
+            <div class="section-three-box-1">
+
+                <div class="htmlcss-project-box">
+
+                    <img class="project-box-img"
+                        src="https://camo.githubusercontent.com/21bb8ae3629c4852404841252c65baa38426e4c0d01a68a0f7e6fd121d4649dc/68747470733a2f2f7777772e69696d2e66722f65636f6c652d7765622f77702d636f6e74656e742f75706c6f6164732f323031372f30312f48544d4c352e6a7067"
+                        alt="">
+                    <p class="project-name-card">Chess</p>
+                    <button class="project-card-button">View Project</button>
+                </div>
+                <div class="htmlcss-project-box">
+                    <img class="project-box-img"
+                        src="https://camo.githubusercontent.com/21bb8ae3629c4852404841252c65baa38426e4c0d01a68a0f7e6fd121d4649dc/68747470733a2f2f7777772e69696d2e66722f65636f6c652d7765622f77702d636f6e74656e742f75706c6f6164732f323031372f30312f48544d4c352e6a7067"
+                        alt="">
+                    <p class="project-name-card">Chess</p>
+                    <button class="project-card-button">View Project</button>
+                </div>
+                <div class="htmlcss-project-box">
+                    <img class="project-box-img"
+                        src="https://camo.githubusercontent.com/21bb8ae3629c4852404841252c65baa38426e4c0d01a68a0f7e6fd121d4649dc/68747470733a2f2f7777772e69696d2e66722f65636f6c652d7765622f77702d636f6e74656e742f75706c6f6164732f323031372f30312f48544d4c352e6a7067"
+                        alt="">
+                    <p class="project-name-card">Chess</p>
+                    <button class="project-card-button">View Project</button>
+                </div>
+            </div>
+
+
+
+
+            <div class="section-three-box-2">
+                <div class="htmlcss-project-box">
+                    <img class="project-box-img"
+                        src="https://camo.githubusercontent.com/21bb8ae3629c4852404841252c65baa38426e4c0d01a68a0f7e6fd121d4649dc/68747470733a2f2f7777772e69696d2e66722f65636f6c652d7765622f77702d636f6e74656e742f75706c6f6164732f323031372f30312f48544d4c352e6a7067"
+                        alt="">
+                    <p class="project-name-card">Chess</p>
+                    <button class="project-card-button">View Project</button>
+                </div>
+                <div class="htmlcss-project-box">
+                    <img class="project-box-img"
+                        src="https://camo.githubusercontent.com/21bb8ae3629c4852404841252c65baa38426e4c0d01a68a0f7e6fd121d4649dc/68747470733a2f2f7777772e69696d2e66722f65636f6c652d7765622f77702d636f6e74656e742f75706c6f6164732f323031372f30312f48544d4c352e6a7067"
+                        alt="">
+                    <p class="project-name-card">Chess</p>
+                    <button class="project-card-button">View Project</button>
+                </div>
+                <div class="htmlcss-project-box">
+                    <img class="project-box-img"
+                        src="https://camo.githubusercontent.com/21bb8ae3629c4852404841252c65baa38426e4c0d01a68a0f7e6fd121d4649dc/68747470733a2f2f7777772e69696d2e66722f65636f6c652d7765622f77702d636f6e74656e742f75706c6f6164732f323031372f30312f48544d4c352e6a7067"
+                        alt="">
+                    <p class="project-name-card">Chess</p>
+                    <button class="project-card-button">View Project</button>
+                </div>
+            </div>
+        </div>
+        <!--------section-three--end --------->
+        <!-- section-four-start -->
+        <div class="project-name" id="Contact">Contact</div>
+        <div class="section-four">
+            <div class="contact-box">
+                <p>Phone</p>
+                <b><a href="tel:9875657856">8975657856</a></b>
+            </div>
+            <div class="contact-box">
+                <p>Gmail</p>
+                <b><a href="mailto:dharpurevicky9@gmail.com">dharpurevicky9@gmail.com</a></b>
+            </div>
+
+            <div class="contact-box">
+                <p>Location</p>
+                <b><a href="https://www.google.com/maps/place/Nagpur,+Maharashtra,+India" target="_blank">Nagpur,
+                        Maharashtra, India</a></b>
+            </div>
+
+            <div class="contact-box">
+                <p>Github</p>
+                <b><a href="mailto:dharpurevicky9@gmail.com">dharpurevicky9@gmail.com</a></b>
+            </div>
+
+            <div class="contact-box">
+                <p>Linkedin</p>
+                <b><a href="https://www.google.com/maps/place/Nagpur,+Maharashtra,+India" target="_blank">Nagpur,
+                        Maharashtra, India</a></b>
+            </div>
+        </div>
+    </div>
+    
+    <!-- section-four-end -->
+
+
+
+    </div>
+    <!-- main-container-----------end -->
+</body>
+
+
+</html>
