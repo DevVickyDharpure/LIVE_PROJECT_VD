@@ -374,6 +374,7 @@
 
 
         /* ----section-two--end --- */
+        /* -----section-three----start------ */
 
         .section-three {
             height: 100%;
@@ -389,7 +390,7 @@
             font-size: 35px;
             text-align: center;
             color: white;
-             background: linear-gradient(to right, #171717, rgb(1, 33, 61), rgb(1, 36, 64), #2a2c2b);
+            background: linear-gradient(to right, #171717, rgb(1, 33, 61), rgb(1, 36, 64), #2a2c2b);
 
         }
 
@@ -439,7 +440,8 @@
             background-color: #e0e0e0;
 
         }
-         .htmlcss-project-box:hover {
+
+        .htmlcss-project-box:hover {
             transform: scale(1.1);
             box-shadow: 0 0 15px rgb(10, 179, 209);
         }
@@ -482,7 +484,7 @@
         .section-four {
             height: 40%;
             width: 100%;
-             background: linear-gradient(to right, #171717, rgb(1, 33, 61), rgb(1, 36, 64), #383b3a);
+            background: linear-gradient(to right, #171717, rgb(1, 33, 61), rgb(1, 36, 64), #383b3a);
             display: flex;
             justify-content: space-evenly;
 
@@ -512,9 +514,9 @@
         @media (max-width:430px) {
 
             .header {
-                height: 10%;
+                height: 60px;
                 flex-direction: column;
-                margin-top: 4px;
+                margin-top: 0px;
             }
 
             .header-box-name {
@@ -523,15 +525,15 @@
             }
 
             .header-name {
-                font-size: 29px;
+                font-size: 22px;
                 margin-top: 10px;
-
+                text-shadow: 2px 2px rgb(109, 1, 1);
             }
 
             .header-button {
                 width: 100%;
                 height: 50%;
-                padding-top: 1.9%;
+                padding-top: -2px;
                 padding-left: 20px;
                 font-size: 15px;
                 gap: 30px;
@@ -540,9 +542,8 @@
 
 
             .class-1 {
-                height: 90%;
+                height: auto;
                 width: 100%;
-
                 margin-top: 80px;
                 display: flex;
                 flex-direction: column-reverse;
@@ -551,46 +552,65 @@
             }
 
             .section-1-box-1 {
-                height: 50%;
+                height: auto;
                 width: 100%;
+                ;
+                margin-top: 40px;
 
             }
 
             .home-skills {
-                font-size: 30px;
-                padding-top: 0.1px;
+                font-size: 25px;
+                padding-top: 1px;
                 padding-left: 90px;
 
             }
 
             .developer-home-text {
                 font-size: 15px;
-                padding-left: 8px;
+                padding-left: 44px;
 
             }
 
+            @keyframes typing {
+                from {
+                    width: 0;
+                }
+
+                to {
+                    width: 85%;
+                }
+            }
+
+            @keyframes blink {
+                50% {
+                    border-color: transparent;
+                }
+            }
+
             .experiences-text {
-                font-size: 13px;
+                font-size: 15px;
                 padding-left: 48PX;
+                color: wheat;
 
             }
 
             .home-number-1 {
-                font-size: 35px;
-                padding-left: 45px;
-                color: rgb(4, 4, 130);
+                font-size: 30px;
+                padding-left: 48px;
+                color: rgb(239, 239, 255);
             }
 
             .home-number-2 {
-                font-size: 35px;
+                font-size: 30px;
                 padding-left: 36px;
-                color: rgb(4, 4, 130);
+                color: rgb(255, 255, 255);
             }
 
             .home-number-3 {
-                font-size: 35px;
-                padding-left: 20px;
-                color: rgb(4, 4, 130);
+                font-size: 30px;
+                padding-left: 28px;
+                color: rgb(255, 255, 255);
             }
 
             .home-page-button-1 {
@@ -598,6 +618,7 @@
                 width: 115px;
                 font-size: 13px;
                 margin-left: 65px;
+
                 border: none;
                 background-color: rgb(0, 81, 138);
                 border-radius: 5px;
@@ -618,48 +639,284 @@
 
 
             .section-1-box-2 {
-                height: 50%;
+                height: auto;
                 width: 100%;
+                margin-top: -30px;
 
                 display: flex;
             }
 
             .img-box-section-1 {
-                height: 300px;
-                width: 300px;
-                background-color: #ffffff;
+                height: 150px;
+                width: 200px;
+                background-color: #ac1a1a;
                 border-radius: 200px;
                 display: flex;
                 justify-content: center;
                 align-items: center;
-                margin-left: 50px;
+                margin-left: 110px;
+                margin-top: -20px;
+
             }
 
             .developer-img {
                 height: 200px;
-                width: 200px;
+                width: 235px;
+
+
             }
 
             /*  */
-            /*  */
+            /* section-two -start--------------- */
             .section-two {
                 height: auto;
                 width: 100%;
+                display: flex;
+                flex-direction: column;
 
 
             }
 
             .about-headline {
-
                 background-color: aliceblue;
                 font-size: 27px;
-                padding-left: 158px;
+                padding-left: 8px;
             }
 
             .about-text {
                 font-size: 12px;
                 padding-left: 5px;
             }
+
+            /*  */
+            /*  */
+            .about-box-1 {
+
+                width: 40%;
+                padding-top: 90px;
+                display: flex;
+                flex-direction: column;
+
+            }
+
+
+            .img-about-section {
+                height: 320px;
+                width: 350px;
+                background-color: #a09a9a;
+                border-radius: 2px;
+                display: flex;
+                justify-content: center;
+                margin-left: 25px;
+                margin-top: -25px;
+                border-radius: 5px;
+
+            }
+
+            .developer-img-2 {
+                height: 310px;
+                width: 340px;
+            }
+
+            /*  */
+            .codder-name {
+                width: 100%;
+                padding-left: 130px;
+                font-size: 20px;
+                color: wheat;
+
+
+            }
+
+            .codder-skills {
+                width: 100%;
+                padding-left: 130px;
+                font-size: 18px;
+                color: wheat;
+
+            }
+
+            .about-box-2 {
+                height: 100%;
+                width: 60%;
+
+            }
+
+            .text-about-box-2 {
+                width: 100%;
+
+                font-size: 14px;
+                padding-left: 80px;
+                padding-right: -20px;
+                padding-top: 3px;
+                color: wheat;
+            }
+
+            .text-language {
+                font-size: 10px;
+                padding-left: 80px;
+                padding-right: 20px;
+                color: wheat;
+
+            }
+
+            .resume-button {
+                height: 30px;
+                width: 130px;
+                margin-left: 120px;
+                font-size: 16px;
+                border-radius: 3px;
+                border: none;
+                background-color: rgb(0, 81, 138);
+                color: #ffffff;
+            }
+
+            .about-skills {
+                font-size: 20px;
+                margin-left: 150px;
+                color: rgb(255, 255, 255);
+
+            }
+
+            .card-container {
+                height: auto;
+                display: flex;
+                flex-direction: column;
+                justify-content: space-evenly;
+
+            }
+
+            .skills-card {
+                height: 180px;
+                width: 220px;
+                background-color: rgba(3, 156, 154, 0.59);
+                border-radius: 19px;
+                margin-top: 17px;
+                margin-left: 90px;
+                transition: 0.2s transform 0.2s;
+                display: flex;
+                flex-direction: column;
+            }
+
+
+
+            /*  */
+            /*  */
+            /*  */
+            .section-three {
+                height: auto;
+                width: 100%;
+                display: flex;
+                flex-direction: column;
+                background: linear-gradient(to right, #171717, rgb(1, 33, 61), rgb(1, 36, 64), #383b3a);
+                
+            }
+
+            .project-opction {
+                width: 100%;
+                height: 7%;
+                padding-left: 40px;
+            }
+
+            .opction-button {
+                height: 30px;
+                width: 100px;
+                font-size: 10px;
+            }
+
+            .opction-button:hover {
+                transform: scale(1.1);
+                box-shadow: 0 0 15px rgb(10, 179, 209);
+            }
+
+            /*  */
+            /*  */
+            .section-three-box-1 {
+                height:auto;
+                width: 100%;
+                display: flex;
+                flex-direction: column;
+             justify-content: space-around;
+                padding-top: 30px;
+            }
+
+            .htmlcss-project-box {
+                height: 250px;
+                width: 250px;
+                background-color: #e0e0e0;
+                margin-left: 70px;
+                border: 2px solid red   ;
+                gap: 50px;
+                
+
+            }
+
+            .htmlcss-project-box:hover {
+                transform: scale(1.1);
+                box-shadow: 0 0 15px rgb(10, 179, 209);
+                
+            }
+
+            .project-box-img {
+                height: 140px;
+                width: 200px;
+                padding-left: 20px;
+                padding-top: 15px;
+            }
+
+
+            .project-card-button {
+                height: 30px;
+                width: 135px;
+                margin-left: 60px;
+                border: none;
+                font-size: 15px;
+                background-color: rgb(97, 196, 54);
+                color: #e2fff5;
+                border-radius: 4px;
+                margin-top: -6px;
+            }
+
+            .section-three-box-2 {
+                height: auto;
+                width: 100%;
+                display: flex;
+                flex-direction: column;
+                justify-content: space-evenly;
+
+            }
+             .section-four {
+            height: auto;
+            width: 100%;
+            background: linear-gradient(to right, #171717, rgb(1, 33, 61), rgb(1, 36, 64), #383b3a);
+            display: flex;
+            flex-direction: column;
+            justify-content: space-evenly;
+
+
+        }
+
+        .contact-box {
+            height: 100px;
+            width: 230px;
+            background-color: rgba(245, 245, 245, 0.177);
+            margin-top: 60px;
+            text-align: center;
+            font-size: 18px;
+            border-radius: 7px;
+            border: 0 0 2px solid yellow;
+            margin-left: 80px;
+        }
+
+        .contact-box:hover {
+            transform: scale(1.1);
+            box-shadow: 0 0 15px rgb(10, 179, 209);
+        }
+
+
+
+
+
 
 
         }
@@ -764,7 +1021,8 @@
                             alt="">
 
                         <b class="skills-text-box"> Html / Css</b>
-                        <p class="long-text">Together, HTML and CSS form the foundation for creating visually appealing and structured web pages.</p>
+                        <p class="long-text">Together, HTML and CSS form the foundation for creating visually appealing
+                            and structured web pages.</p>
                     </div>
                     <div class="skills-card">
                         <img class="skills-icons-2" src="https://img.icons8.com/?size=80&id=67375&format=png" alt="">
@@ -776,7 +1034,8 @@
                         <img class="skills-icons-2" src="https://img.icons8.com/?size=64&id=Nkym0Ujb8VGI&format=png"
                             alt="">
                         <b class="skills-text-box"> JavaScript</b>
-                        <p class="long-text">JavaScript is a dynamic scripting language primarily used to add interactive features and functionality to web pages. </p>
+                        <p class="long-text">JavaScript is a dynamic scripting language primarily used to add
+                            interactive features and functionality to web pages. </p>
                     </div>
                 </div>
 
@@ -882,7 +1141,7 @@
             </div>
         </div>
     </div>
-    
+
     <!-- section-four-end -->
 
 
