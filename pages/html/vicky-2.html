@@ -1,11 +1,105 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>javascripty</title>
+    <style>
+        .main-container {
+            height: 100vh;
+            width: 100vw;
+
+        }
+
+        .section-one {
+            height: 100%;
+            width: 100%;
+            background-color: rgb(194, 213, 213);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border: 2px solid black;
+            border-radius: 9px
+        }
+
+        .display-area {
+            height: 70%;
+            width: 50%;
+            background-color: rgb(111, 240, 233);
+            border-radius: 8px;
+        }
+
+        .sereen-box {
+            height: 500px;
+            width: 95%;
+            background-color: rgb(255, 250, 240);
+            border-radius: 29px;
+            margin-left: 20px;
+        }
+
+        .mini-box-1 {
+            height: 50px;
+            width: 450px;
+            background-color: rgb(202, 203, 205);
+            margin-left: 25px;
+            border-radius: 12px;
+            margin-left: 15px;
+        }
+
+        .mini-box-2 {
+            height: 50px;
+            width: 90px;
+            background-color: rgb(156, 155, 163);
+        }
+    </style>
 </head>
+
 <body>
-    
+    <div class="main-container">
+        <!--  -->
+        <div class="section-one">
+            <div class="display-area">
+                <!--  -->
+                <div class="sereen-box" id="display"></div>
+                <input type="text" class="mini-box-1" id="input" placeholder="Type a massage....">
+                <input type="text" id="input-one">
+
+                <button class="mini-box-2" onclick="showOutput()"> Sand</button>
+                <!-- <button class="mini-box-2" onclick="add()"> Sand</button> -->
+
+
+                <!--  -->
+            </div>
+
+        </div>
+    </div>
+
 </body>
+<!--  -->
+<script>
+    // function=block of code does a specific task
+    // function showOutput(){
+    // let x= prompt("enter the number") ;
+    // console.log (x) ;
+
+    // }
+    // function add(){
+    //     let x= prompt("enter your name ") ;
+    //     console.log (x + " vicky " )  ; 
+
+    // }
+    // 0
+
+
+    // }
+    function abcd() {
+        let name =document .getElementById ("input").value
+         let lastname =document .getElementById ("input-one").value
+    }
+
+
+
+</script>
+
 </html>
