@@ -1,70 +1,157 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
-        .main-box{
+        .main-box {
             height: 100vh;
             width: 100vw;
         }
-        .class-one{
+
+        .class-one {
             height: 100%;
             width: 100%;
-            background-color: rgb(0, 0, 94);
+            background-color: rgb(0, 0, 70);
             display: flex;
-            flex-direction: column;
             justify-content: center;
             align-items: center;
         }
-        .header{
-            height: 20%;
-            width: 80%;
-            background-color: wheat ;
-        }
-        .section{
-            height: 80%;
-            width: 80%;
-            background-color: aliceblue;
+
+        /* ------   header-start ----- */
+
+        /* -------header----end------ */
+
+
+        /*  part-one----img---contact---skill--section----start  */
+        .information-box-1 {
+            height: 95%;
+            width: 20%;
+            background-color: rgb(225, 255, 253);
+
             display: flex;
-        }
-        /*  */
-        .information-box-1{
-           height:100%;
-           width: 25%;
-           background-color: rgb(117, 116, 117);
-           display: flex;
-        }
-        img{
-            height: 200px;
-            width: 230px;
+            flex-direction: column;
+            margin-top: 10px;
 
         }
-         .information-box-2{
-           height:100%;
-           width: 75%;
-           background-color: rgb(100, 37, 100);
+
+        /* -   ---developer---image---- - */
+        .developer-img {
+            height: 250px;
+            width: 230px;
+            border-radius: 3px;
+            margin-top: 31px;
+            margin-left: 29px;
+
+
+        }
+
+        .information-box-2 {
+            height: 95%;
+            width: 60%;
+            background-color: rgb(255, 255, 255);
+            margin-left: 29px;
+            margin-top: 10px;
         }
     </style>
 </head>
+
 <body>
     <!-- main-box----start -- -->
     <div class="main-box">
         <!--  class-one-start -->
         <div class="class-one">
-                <div class="header">    <img src="http://enjoyprograming.com/assets/logo/resized-logo.jpeg" alt="">  </div>
-            <div class="section">
+            <div class="information-box-1">
+                <img class="developer-img" src="" alt="" id="Image"> <br> <br> <br>
+
+                <p id="Contact"></p>
+
+                <b id="PhoneNo"></b>
+
+                <b id="Email"></b>
+
+                <b id="GitHub">55</b>
+
+                <b id="LinkedIn"></b>
 
 
-                <div class="information-box-1">
-                 <img src="http://enjoyprograming.com/assets/images/student/RATNESH.jpeg" alt=""    >
-                </div>
-               <div class="information-box-2"></div>
+                <br><br>
+                <b id="Skill"></b>
+                <b id="Html">55</b>
+                <b id="Css">1</b>
+                <b id="Javascript">22</b>
+
+
+
+
+
             </div>
 
 
+
+
+
+
+
+
+
+            <div class="information-box-2"></div>
         </div>
     </div>
 </body>
+
 </html>
+
+<script>
+
+    let profileImage = "../../assets/img/IMG_20251013_122130 (1).jpg"
+    let contact = "  Contact"
+    let phoneNo = " 📞  8975657856 "
+    let email = " 📧 dharpurevicky9@gmail.com"
+    let github = "  GitHub"
+    let linkedin = "LinkedIn"
+
+
+
+
+    let skill = " SKILLS"
+    let html = "HTMl"
+    let css = "CSS"
+    let js = "JavaScript"
+
+
+
+
+
+
+
+    document.getElementById("Image").src = profileImage;
+
+    document.getElementById("Contact").innerHTML = contact;
+
+    document.getElementById("PhoneNo").innerHTML = phoneNo;
+
+    document.getElementById("Email").innerHTML = email;
+
+    document.getElementById("GitHub").innerHTML = github;
+
+    document.getElementById("LinkedIn").innerHTML = linkedin;
+
+
+
+
+
+
+
+    document.getElementById("Skills").innerHTML = skill;
+    document.getElementById("Html").innerHTML = html;
+    document.getElementById("Css").innerHTML = css;
+    document.getElementById("Javascript").innerHTML = js;
+
+
+
+
+    //  document.getElementById("").innerHTML =  
+</script>
