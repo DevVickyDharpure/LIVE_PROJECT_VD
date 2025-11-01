@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resume</title>
+    <style>
+        .main-container {
+            height: 100vh;
+            width: 100vw;
+            background-color: rgb(16, 1, 71);
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+
+        }
+
+        .class-one {
+            height: 90%;
+            width: 40%;
+            background-color: wheat;
+
+        }
+
+        button {
+            height: 50px;
+            width: 170px;
+            background-color: rgb(0, 169, 0);
+        }
+
+        img {
+            height: 240px;
+            width: 250px;
+            margin-left: 160px;
+            margin-top: 20px;
+
+        }
+
+        b {
+            margin-left: 130px;
+            font-size: 16px;
+
+        }
+    </style>
+</head>
+
+<body>
+    <div class="main-container">
+        <div class="class-one">
+            <img id="img-one" src="">
+            <br>
+            <br>
+            <span>
+                <b id="name"></b>
+                <br>
+                <br>
+                <b id="age"></b>
+                <br>
+                <br>
+                <b id="gender"></b>
+                <br>
+
+                <br>
+                <b id="aadharNo"></b>
+                <br>
+                <br>
+                <b id="collage"> </b>
+                <br>
+                <br>
+                <b id="myClass"></b>
+                <br>
+                <br>
+                <b id="contactNo"></b>
+                <br>
+                <br>
+                <b id="hobbies"></b>
+
+            </span>
+        </div>
+
+
+    </div>
+</body>
+
+</html>
+
+
+
+<script>
+
+    let profileImage = "https://images.bild.de/6878a18204a5864b7b8d8f1c/154a21408c6bc31d4611c9ae1fe0f1d9,93fb0038?w=992"
+    let name = "Vicky somraj dharpure ";
+    let age = " 20 Years ";
+    let gender = " male";
+
+    let aadharNo = "  3904 8382 5734";
+    let collage = "Jivan vikas mahavidhalaya Devgram ";
+    let myClass = "  Bsc. cs  2 year";
+    let contactNo = " 8975657856";
+    let hobbies = " wollyboll";
+    let fatherName = " Somraj ";
+    let motherName = " ratna";
+    let favouriteColour = " blue";
+    let favouriteCar = " bmw";
+    let favouriteBike = " Kavasaki";
+    let favouriteSir = " Class sir";
+    let email = " ";
+
+
+    // 
+
+
+    document.getElementById("img-one").src = profileImage;
+
+    document.getElementById("name").innerHTML = "Name : " + name;
+    document.getElementById("gender").innerHTML = "Gender : " + gender;
+
+    document.getElementById("age").innerHTML = " Age : " + age;
+    document.getElementById("aadharNo").innerHTML = " Aadhar No :" + aadharNo;
+
+    document.getElementById("collage").innerHTML = "  Collage: " + collage;
+    document.getElementById("myClass").innerHTML = "  Class : " + myClass;
+
+    document.getElementById("contactNo").innerHTML = " Phone No: " + contactNo;
+    document.getElementById("hobbies").innerHTML = "Hobbies : " + hobbies;
+
+  
+    // document.getElementById("").innerHTML = "Name : " + name;
+    // document.getElementById("inf").innerHTML = "Name : " + name;
+
+
+
+</script>
