@@ -47,6 +47,17 @@
 
 
         }
+        .github-img{
+            display: flex;
+        }
+        .png-img{
+            height: 25px;
+            width: 25px;
+            margin-top: px;
+        }
+        .git-lin{
+            margin-top: 4px;
+        }
 
         .information-box-2 {
             height: 95%;
@@ -54,6 +65,11 @@
             background-color: rgb(255, 255, 255);
             margin-left: 29px;
             margin-top: 10px;
+        }
+
+        b {
+            margin-left: 20px;
+            font-size: 23px;
         }
     </style>
 </head>
@@ -66,36 +82,39 @@
             <div class="information-box-1">
                 <img class="developer-img" src="" alt="" id="Image"> <br> <br> <br>
 
-                <p id="Contact"></p>
+                <b id="Contact"></b>
 
-                <b id="PhoneNo"></b>
 
-                <b id="Email"></b>
+                <span id="PhoneNo"></span>
 
-                <b id="GitHub">55</b>
+                <span id="Email"></span>
 
-                <b id="LinkedIn"></b>
+                <div class="github-img">
+                 <span> <img class="png-img" src="../../assets/img/icons8-github-logo-48.png" alt=""></span>
+                   <span class="git-lin" id="GitHub"></span>
+                </div>
+            
+                 <div class="github-img">
+                 <span> <img class="png-img" src="../../assets/img/icons8-linkedin-48.png" alt=""></span>
+                   <span class="git-lin" id="LinkedIn" ></span>
+                </div>
+
+                
+
+               
 
 
                 <br><br>
-                <b id="Skill"></b>
-                <b id="Html">55</b>
-                <b id="Css">1</b>
-                <b id="Javascript">22</b>
+                <b id="Skills"></b>
+                <span id="Html"></span>
+                <span id="Css"></span>
+                <span id="Javascript"></span>
 
 
 
 
 
             </div>
-
-
-
-
-
-
-
-
 
             <div class="information-box-2"></div>
         </div>
@@ -106,7 +125,7 @@
 
 <script>
 
-    let profileImage = "../../assets/img/IMG_20251013_122130 (1).jpg"
+    let profileImage = "../../assets/img/IMG_20251013_122130.jpg"
     let contact = "  Contact"
     let phoneNo = " 📞  8975657856 "
     let email = " 📧 dharpurevicky9@gmail.com"
@@ -116,10 +135,10 @@
 
 
 
-    let skill = " SKILLS"
-    let html = "HTMl"
-    let css = "CSS"
-    let js = "JavaScript"
+    let skill = " * SKILLS"
+    let html = ". HTMl"
+    let css = " . CSS"
+    let js = " . JavaScript"
 
 
 
