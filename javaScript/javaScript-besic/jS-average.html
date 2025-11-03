@@ -25,6 +25,11 @@
             height: 40px;
             width: 150px;
         }
+        button{
+            height: 40px;
+            width: 140px;
+            background-color: lightgreen;
+        }
     </style>
 </head>
 
@@ -36,8 +41,15 @@
             <input class="box" type="text" id="input1">
             <input class="box" type="text" id="input2">
             <input class="box" type="text" id="input3">
+        
+                <input class="box" type="text" id="input4">
+                <input class="box" type="text" id="input5">
+          
         </div>
+      
         <button onclick="vicky()"></button>
+        <button onclick="vicky2()"></button>
+
 
     </div>
 </body>
@@ -50,11 +62,25 @@
         let a = Number( document.getElementById("input1").value  ) ;
         let b = Number( document.getElementById("input2").value ) ; 
        let c = Number( document.getElementById("input3").value )  ;
-       
+       let d = Number( document.getElementById("input4").value ) ; 
+        let e = Number( document.getElementById("input5").value )  ;
 
-       let x =  a + b + c ;
        
-       document.getElementById("display").innerHTML = x /3;
+    
+
+       
+       let x =  a + b + c ;
+       let y = d + e ;
+       let average = (x+ y)/2; 
+       
+       document.getElementById("display").innerHTML = x /3 ;
+       document.getElementById("display").innerHTML = y /2 ;
+       document.getElementById("display").innerHTML = average /2;
+    
+       
+    }
+    function vicky2(){
+        
     }
 
 
