@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .main-box {
+            height: 100vh;
+            width: 100vw;
+            display: flex;
+            flex-direction: column;
+          
+            align-items: center;
+        }
+
+        .screen-box {
+            height: 400px;
+            width: 100%;
+            background-color: wheat;
+        }
+        p{
+            text-align: center;
+            font-size: 30px;
+        }
+        .button-box{
+            width: 100%;
+            height: 400px;
+            background-color: violet;
+        }
+
+        button {
+            height: 50px;
+            width: 140px;
+            background-color: aqua;
+            border: none;
+            border-radius: 5px;
+            margin-top: 30px;
+            margin-left: 50px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="main-box">
+
+        <div class="screen-box" id="screen-box">
+
+            <p> Wellcome to Unviersal Clander</p>
+            <p id="day"></p>
+        </div>
+        <!--  -->
+        <div class="button-box" id="button-box">
+            <button id="sun" onclick="sunday()">Sunday</button>
+            <button id="mon" onclick="monday()"> Monday</button>
+            <button id="tue" onclick="tuesday()">Tuesday</button>
+            <button id="wed" onclick="wenesday()">Wenesday </button>
+            <button id="thu" onclick="thuesday()"> Thuesdat</button>
+            <button id="fri" onclick="friday()"> Friday</button>
+            <button id="sat" onclick="saturday()"> Saturday</button>
+
+        </div>
+    </div>
+</body>
+
+</html>
+<script>
+    function sunday() {
+        document.getElementById("screen-box").style .backgroundColor ="#9BB4C0";
+         document.getElementById("button-box").style .backgroundColor ="#F0E491";
+         document.getElementById("sun"). style .backgroundColor ="#A72703";
+         document.getElementById("day").innerHTML ="Today is Sunday"
+    }
+    
+     function monday() {
+       document.getElementById("screen-box").style .backgroundColor ="#F5E5E1";
+         document.getElementById("button-box").style .backgroundColor ="#F9B487";
+         document.getElementById("mon"). style .backgroundColor ="#427A76";
+           document.getElementById("day").innerHTML ="Today is Monday"
+    }
+     function tuesday() {
+         document.getElementById("screen-box").style .backgroundColor ="#CBF3BB";
+         document.getElementById("button-box").style .backgroundColor ="#93BFC7";
+         document.getElementById("tue"). style .backgroundColor ="#F4F754";
+           document.getElementById("day").innerHTML ="Today is Tuesday"
+    }
+     function wenesday() {
+     document.getElementById("screen-box").style .backgroundColor ="#758A93";
+         document.getElementById("button-box").style .backgroundColor ="#ECD5BC";
+         document.getElementById("wed"). style .backgroundColor ="#C66E52";
+           document.getElementById("day").innerHTML ="Today is Wenesday"
+    }
+     function thuesday() {
+       document.getElementById("screen-box").style .backgroundColor ="#FFBBE1";
+         document.getElementById("button-box").style .backgroundColor ="#DD7BDF";
+         document.getElementById("thu"). style .backgroundColor ="#FF9013";
+           document.getElementById("day").innerHTML ="Today is Thuesday"
+    }
+      function friday() {
+       document.getElementById("screen-box").style .backgroundColor ="#34656D";
+         document.getElementById("button-box").style .backgroundColor ="#FAEAB1";
+         document.getElementById("fri"). style .backgroundColor ="#B3BFFF";
+           document.getElementById("day").innerHTML ="Today is Friday"
+    }
+      function saturday() {
+      document.getElementById("screen-box").style .backgroundColor ="#FFBBE1";
+         document.getElementById("button-box").style .backgroundColor ="#E8DFCA";
+         document.getElementById("sat"). style .backgroundColor ="#B3BFFF";
+           document.getElementById("day").innerHTML ="Today is Saturday"
+    }
+
+</script>

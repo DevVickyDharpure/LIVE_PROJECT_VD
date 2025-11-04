@@ -4,60 +4,110 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>javascripty</title>
     <style>
-        .main-box {
+        .main-container {
             height: 100vh;
             width: 100vw;
+
+        }
+
+        .section-one {
+            height: 100%;
+            width: 100%;
+            background-color: rgb(194, 213, 213);
             display: flex;
-            flex-direction: column;
-            justify-content: center;
             align-items: center;
+            justify-content: center;
+            border: 2px solid black;
+            border-radius: 9px
         }
 
-        .screen-box {
-            height: 400px;
-            width: 500px;
-            background-color: wheat;
+        .display-area {
+            height: 70%;
+            width: 50%;
+            background-color: rgb(111, 240, 233);
+            border-radius: 8px;
         }
 
-        .box {
-            height: 40px;
-            width: 150px;
+        .sereen-box {
+            height: 500px;
+            width: 95%;
+            background-color: rgb(255, 250, 240);
+            border-radius: 29px;
+            margin-left: 20px;
+        }
+
+        .mini-box-1 {
+            height: 50px;
+            width: 450px;
+            background-color: rgb(202, 203, 205);
+            margin-left: 25px;
+            border-radius: 12px;
+            margin-left: 15px;
+        }
+
+        .mini-box-2 {
+            height: 50px;
+            width: 90px;
+            background-color: rgb(156, 155, 163);
         }
     </style>
 </head>
 
 <body>
+    <div class="main-container">
+        <!--  -->
+        <div class="section-one">
+            <div class="display-area">
+                <!--  -->
+                <div class="sereen-box" id="display"></div>
+                <input type="text" class="mini-box-1" id="input" placeholder="Type a massage....">
+                <input type="text" id="input-one">
 
-    <div class="main-box">
-        <div class="screen-box" id="display"></div>
-        <div>
-            <input class="box" type="text" id="input1">
-            <input class="box" type="text" id="input2">
-            <input class="box" type="text" id="input3">
+                <button class="mini-box-2" onclick="showOutput()"> Sand</button>
+                <!-- <button class="mini-box-2" onclick="add()"> Sand</button> -->
+
+
+                <!--  -->
+            </div>
+
         </div>
-        <button onclick="vicky()"></button>
-
     </div>
+
 </body>
-
-</html>
+<!--  -->
 <script>
-    function vicky() {
-     
+    // function=block of code does a specific task
+    // function showOutput(){
+    // let x= prompt("enter the number") ;
+    // console.log (x) ;
 
-        let a = Number( document.getElementById("input1").value  ) ;
-        let b = Number( document.getElementById("input2").value ) ; 
-       let c = Number( document.getElementById("input3").value )  ;
+    // }
+    // function add(){
+    //     let x= prompt("enter your name ") ;
+    //     console.log (x + " vicky " )  ; 
+
+    // }
+    function showOutput() {
+        // let x= document.getElementById("input").value;
+
+        // document.getElementById("display").innerHTML= x;
+        // document.getElementById( "display" ).innerHTML= y = x -20 ;
+        let y = document.getElementById("input").value;
+        let x = document.getElementById("input-one").value;
+        // x = "x";
        
 
-       let x =  a + b + c ;
-       
-       document.getElementById("display").innerHTML = x/3;
+        // document.getElementById("display").innerHTML = "data type of " + x + "  is " + typeof x;
+        document.getElementById("display").innerHTML =  z = y + x; 
+
+
+
     }
 
 
-
-
 </script>
+
+</html>
+
