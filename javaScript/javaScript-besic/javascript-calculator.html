@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .main-box {
+            height: 100vh;
+            width: 100vw;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .calculator-box {
+            height: 490px;
+            width: 350px;
+            background-color: rgb(211, 186, 186);
+            border-radius: 5px;
+        }
+
+        .screen-box {
+            height: 100px;
+            width:320px;
+            background-color: rgb(156, 175, 160);
+            border-radius: 8px;
+            margin-top: 20px;
+            margin-left: 15px;
+            font-size: 25px;
+        }
+        .button-row-1{
+            height: 60px;
+            width: 60px;
+            margin-left: 20px;
+            margin-top: 10px;
+            border: none;
+            background-color: rgb(105, 104, 104);
+            color: wheat;
+            font-size: 28px;
+            border-radius: 100px;
+        }
+        .button-zero{
+            height: 52px;
+            width: 143px;
+            margin-left: 20px;
+            margin-top: 10px;
+            border: none;
+            background-color: rgb(105, 104, 104);
+            color: wheat;
+            font-size: 28px;
+            border-radius: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <!--       -     -    -->
+    <div class="main-box">
+
+        <div class="calculator-box">
+
+            <div class="screen-box" id="display"></div>
+
+            <div>
+                <button class="button-row-1">AC</button>
+                <button class="button-row-1">+/-</button>
+                <button class="button-row-1">%</button>
+                <button class="button-row-1">÷</button>
+            </div>
+            <div>
+                <button class="button-row-1"onclick="number7()" >7</button>
+                <button class="button-row-1" onclick="number8()">8</button>
+                <button class="button-row-1" onclick="number9()">9</button>
+                <button class="button-row-1" onclick="multi()">*</button>
+            </div>
+            <div>
+                <button class="button-row-1">4</button>
+                <button class="button-row-1">5</button>
+                <button class="button-row-1">6</button>
+                <button class="button-row-1">-</button>
+            </div>
+            <div>
+                <button class="button-row-1">1</button>
+                <button class="button-row-1">2</button>
+                <button class="button-row-1">3</button>
+                <button class="button-row-1">+</button>
+            </div>
+            <div>
+                <button class="button-zero">0</button>
+               
+                <button class="button-row-1">.</button>
+                <button class="button-row-1">=</button>
+            </div>
+        </div>
+
+    </div>
+</body>
+
+</html>
+
+<script>
+    function number7(){
+     document.getElementById("display").innerHTML   +=7 ;
+    }
+     function number8(){
+     document.getElementById("display").innerHTML +=8 ;
+     }
+     function number9(){
+     document.getElementById("display").innerHTML +=9 ;
+    }
+     function multi(){
+     document.getElementById("display").innerHTML = "*";
+     }
+</script>

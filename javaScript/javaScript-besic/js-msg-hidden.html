@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .main-box{
+            height: 100vh;
+            width: 100vw;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+           
+        }
+        .class-one{
+            height: 600px;
+            width: 500px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+           box-shadow: 2px 1px 1px black;
+        }
+         .class-two{
+            height: 500px;
+            width: 400px;
+            border-radius: 15px;
+              box-shadow: 2px 1px 1px black;
+        }
+        h1{
+            text-align: center;
+        }
+        p{
+            text-align: center;
+        }
+        button{
+            height: 30px;
+            width: 120px;
+            border: none;
+            background-color: rgb(6, 202, 6);
+            margin-left: 130px;
+            border-radius: 8px;
+        }
+        .hiddent-box{
+            height: 200px;
+            width: 300px;
+           
+          
+            margin-top: 40px;
+            margin-left: 39px;
+           
+            display: none;
+            box-shadow: 2px 1px  black;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="main-box">
+   <div class="class-one">
+
+    <div class="class-two">
+        <h1>Display box Example</h1>
+        
+        <p>Click the button to reveale the hidden message </p>
+
+        <br>
+        <button onclick="vicky()">Show Message</button>
+        <br>
+
+<div class="hiddent-box" id="mohit">
+
+
+    <br><br>
+    <p> This is hidden text that appears after  click  the button </p>
+    <br>
+    <p>You can put any content here --text </p>
+</div>
+
+    </div>
+   </div>
+    </div>
+</body>
+</html>
+<script>
+function vicky(){
+ document.getElementById("mohit").style .display =" block"
+}
+</script>

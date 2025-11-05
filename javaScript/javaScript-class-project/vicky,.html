@@ -1,113 +1,306 @@
+
 <!DOCTYPE html>
-<html lang="en">
+<html>
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>javascripty</title>
+    <title>Calculator</title>
     <style>
-        .main-container {
-            height: 100vh;
-            width: 100vw;
-
-        }
-
-        .section-one {
-            height: 100%;
-            width: 100%;
-            background-color: rgb(194, 213, 213);
-            display: flex;
+        body{
+             display: flex;
+            flex-direction: column;
             align-items: center;
             justify-content: center;
-            border: 2px solid black;
-            border-radius: 9px
+        }
+        p{
+         font-size: 24px;
+        }
+        .table {
+            width: 500px;
+            height: 600px;
+            border-style: solid;
+            border-color: black;
+            border-width: 3px;
+            border-collapse: collapse;
+           
+        }
+        .first-row 
+        .first-row-td-one 
+        {
+            border-style: solid;
+            border-color: black;
+            border-width: 3px;
+            text-align: right;
+            height: 100px;
+            font-size: 50px;
+            border-collapse: collapse;
+            background-color: gray;
+        }
+        .second-row
+        {
+            height: 80px;
+            width: 80px;
+        } 
+        .second-row-td-one 
+        {
+            border-style: solid;
+            border-color: black;
+            border-width: 3px;
+            background-color: darkgray;
+            font-size: 30px;
+            text-align: center;
+            width: 100px;
+        }
+        .second-row-td-two 
+        {
+            border-style: solid;
+            border-color: black;
+            border-width: 3px;
+            background-color: darkgray;
+            font-size: 30px;
+            text-align: center;
+            width: 100px;
         }
 
-        .display-area {
-            height: 70%;
-            width: 50%;
-            background-color: rgb(111, 240, 233);
-            border-radius: 8px;
+        .second-row-td-three {
+            border-style: solid;
+            border-color: black;
+            border-width: 3px;
+            background-color: darkgray;
+            height: 70px;
+            font-size: 30px;
+            text-align: center;
+            width: 100px;
+
         }
 
-        .sereen-box {
-            height: 500px;
-            width: 95%;
-            background-color: rgb(255, 250, 240);
-            border-radius: 29px;
-            margin-left: 20px;
+        .second-row-td-four {
+            border-style: solid;
+            border-color: black;
+            border-width: 3px;
+            background-color: darkgray;
+            font-size: 30px;
+            text-align: center;
+            background-color:darkorange;
         }
 
-        .mini-box-1 {
-            height: 50px;
-            width: 450px;
-            background-color: rgb(202, 203, 205);
-            margin-left: 25px;
-            border-radius: 12px;
-            margin-left: 15px;
+        .third-row 
+        {
+            height: 80px;
+            width: 80px;
+        }
+        .third-row-td-one
+        {
+            border-style: solid;
+            border-color: black;
+            border-width: 3px;
+            background-color: darkgray;
+            font-size: 30px;
+            text-align: center;
+            width: 100px;
         }
 
-        .mini-box-2 {
-            height: 50px;
-            width: 90px;
-            background-color: rgb(156, 155, 163);
+        .third-row-td-two {
+            border-style: solid;
+            border-color: black;
+            border-width: 3px;
+            background-color: darkgray;
+            font-size: 30px;
+            text-align: center;
+            width: 100px;
+        }
+
+        .third-row-td-three {
+            border-style: solid;
+            border-color: black;
+            border-width: 3px;
+            background-color: darkgray;
+            font-size: 30px;
+            text-align: center;
+            width: 100px;
+        }
+
+        .third-row-td-four {
+            border-style: solid;
+            border-color: black;
+            border-width: 3px;
+            background-color: darkgray;
+            font-size: 30px;
+            text-align: center;
+            width: 100px;
+            background-color:darkorange;
+        }
+
+        .fourth-row 
+       {
+        height: 80px;
+        width: 80px;
+       }
+        .fourth-row-td-one 
+        {
+            border-style: solid;
+            border-color: black;
+            border-width: 3px;
+            background-color: darkgray;
+            font-size: 30px;
+            text-align: center;
+            width: 100px;
+        }
+
+        .fourth-row-td-two {
+            border-style: solid;
+            border-color: black;
+            border-width: 3px;
+            background-color: darkgray;
+            font-size: 30px;
+            text-align: center;
+            width: 100px;
+        }
+
+        .fourth-row-td-three {
+            border-style: solid;
+            border-color: black;
+            border-width: 3px;
+            background-color: darkgray;
+            font-size: 30px;
+            text-align: center;
+            width: 100px;
+        }
+
+        .fourth-row-td-four {
+            border-style: solid;
+            border-color: black;
+            border-width: 3px;
+            background-color: darkgray;
+            font-size: 30px;
+            text-align: center;
+            width: 100px;
+            background-color:darkorange;
+        }
+        .fifth-row
+        {
+            height: 80px;
+            width: 80px;
+        }
+        .fifth-row-td-one {
+            border-style: solid;
+            border-color: black;
+            border-width: 3px;
+            background-color: darkgray;
+            font-size: 30px;
+            text-align: center;
+            width: 100px;
+        }
+
+        .fifth-row-td-two {
+            border-style: solid;
+            border-color: black;
+            border-width: 3px;
+            background-color: darkgray;
+            font-size: 30px;
+            text-align: center;
+        }
+
+        .fifth-row-td-three {
+            border-style: solid;
+            border-color: black;
+            border-width: 3px;
+            background-color: darkgray;
+            font-size: 30px;
+            text-align: center;
+            width: 100px;
+           
+        }
+
+        .fifth-row-td-four {
+            border-style: solid;
+            border-color: black;
+            border-width: 3px;
+            background-color: darkgray;
+            font-size: 30px;
+            text-align: center;
+            width: 100px;
+            background-color:darkorange;
+        }
+        .sixth-row 
+        {
+            height: 80px;
+            width: 80px;
+        }
+        .sixth-row-td-one {
+            border-style: solid;
+            border-color: black;
+         
+            background-color: darkgray;
+            font-size: 30px;
+            text-align: center;
+        }
+        .sixth-row-td-two {
+            border-style: solid;
+            border-color: black;
+            border-width: 3px;
+            background-color: darkgray;
+            font-size: 30px;
+            text-align: center;
+            width: 100px;
+        }
+
+        .sixth-row-td-three {
+            border-style: solid;
+            border-color: black;
+            border-width: 3px;
+            background-color: gray;
+            font-size: 30px;
+            text-align: center;
+            width: 100px;
+            background-color:darkorange;
         }
     </style>
 </head>
-
 <body>
-    <div class="main-container">
-        <!--  -->
-        <div class="section-one">
-            <div class="display-area">
-                <!--  -->
-                <div class="sereen-box" id="display"></div>
-                <input type="text" class="mini-box-1" id="input" placeholder="Type a massage....">
-                <input type="text" id="input-one">
-
-                <button class="mini-box-2" onclick="showOutput()"> Sand</button>
-                <!-- <button class="mini-box-2" onclick="add()"> Sand</button> -->
-
-
-                <!--  -->
-            </div>
-
-        </div>
-    </div>
-
+    <p>Calculator</p>
+    <table class="table">
+        <!--first row-->
+        <tr class="first-row">
+            <td colspan="4" class="first-row-td-one">0</td>
+        </tr>
+        <!--second row-->
+        <tr class="second-row">
+            <td class="second-row-td-one">AC</td>
+            <td class="second-row-td-two">+/-</td>
+            <td class="second-row-td-three">%</td>
+            <td class="second-row-td-four">÷</td>
+        </tr>
+        <!--third row-->
+        <tr class="third-row">
+            <td class="third-row-td-one">7</td>
+            <td class="third-row-td-two">8</td>
+            <td class="third-row-td-three">9</td>
+            <td class="third-row-td-four">*</td>
+        </tr>
+        <!--fourth row-->
+        <tr class="fourth-row">
+            <td class="fourth-row-td-one">6</td>
+            <td class="fourth-row-td-two">5</td>
+            <td class="fourth-row-td-three">4</td>
+            <td class="fourth-row-td-four">-</td>
+        </tr>
+        <!--fifth row-->
+        <tr class="fifth-row">
+            <td class="fifth-row-td-one">3</td>
+            <td class="fifth-row-td-two">2</td>
+            <td class="fifth-row-td-three">1</td>
+            <td class="fifth-row-td-four">+</td>
+        </tr>
+        <!--sixth row-->
+        <tr class="sixth-row">
+            <td colspan="2" class="sixth-row-td-one">0</td>
+            <td class="sixth-row-td-two">.</td>
+            <td class="sixth-row-td-three">=</td>
+        </tr>
+    </table>
+    <script>
+        function buttonOne(){}
+        
+    </script>
 </body>
-<!--  -->
-<script>
-    // function=block of code does a specific task
-    // function showOutput(){
-    // let x= prompt("enter the number") ;
-    // console.log (x) ;
-
-    // }
-    // function add(){
-    //     let x= prompt("enter your name ") ;
-    //     console.log (x + " vicky " )  ; 
-
-    // }
-    function showOutput() {
-        // let x= document.getElementById("input").value;
-
-        // document.getElementById("display").innerHTML= x;
-        // document.getElementById( "display" ).innerHTML= y = x -20 ;
-        let y = document.getElementById("input").value;
-        let x = document.getElementById("input-one").value;
-        // x = "x";
-       
-
-        // document.getElementById("display").innerHTML = "data type of " + x + "  is " + typeof x;
-        document.getElementById("display").innerHTML =  z = y + x; 
-
-
-
-    }
-
-
-</script>
-
 </html>
-
