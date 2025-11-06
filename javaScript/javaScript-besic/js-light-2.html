@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            height: 100vh;
+            width: 100vw;
+            margin: 0;
+            padding: 0;
+        }
+          .main-container{
+            width: 100%;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+        .container{
+            width: 30%;
+            height: 50%;
+            box-shadow: 2px 5px  3px  10px rgb(225, 223, 223)  ;
+        }
+
+        .bulb-img{
+            height: 80%;
+            width: 90%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+
+           
+        }
+        img{
+            height: 70%;
+            width: 50%;
+            object-fit: fill;
+        }
+        button{
+            height: 33px;
+            width: 90px;
+            margin-top: 20px;
+            border: none;
+            border-radius: 5px;
+        }
+        button:hover{
+ background-color: rgb(2, 155, 2);
+        }
+    </style>
+</head>
+<body>
+    <div class="main-container">
+    <div class="container">
+        <div class="bulb-img">
+            <img src="" alt="" id="image">
+
+      
+
+
+             <div class="button-group">
+            <button onclick="redBulb()">Red Bulb</button>
+            <button onclick="greenBulb()">Green Bulb</button>
+               <button onclick="blueBulb()">G Bulb</button>
+        </div>
+        </div>
+
+         </div>
+
+   
+    </div>
+</body>
+</html>
+<script>
+
+    function redBulb(){
+       document.getElementById("image").src ="https://encrypted-tbn0.gstatic.com/shopping?q=tbn:ANd9GcTdK9ALoUH3pp5JCuqCLQCminVtq4jXEwmwYfNKCa8EXS_eqOT8XX2c849ZC3YgHLhqXXUwRK4nkS6BO8L9wVNHCGaE_yRYLaDqy3trX-_zoF6q8r62QS-qeA"
+    }
+     function greenBulb(){
+       document.getElementById("image").src ="https://encrypted-tbn2.gstatic.com/shopping?q=tbn:ANd9GcTtv3ZA21wyI2n8IdcBBoXjrDiPCM40oYjbsVMKjQyYPwaLnnzWx82WlCC3XH_rUyZhqaz22RtoZXKPUgFGtKc9BUrgKI824btUt1ahdfFyDOCRpGVTKPDW"
+    }
+      function blueBulb(){
+       document.getElementById("image").src ="https://encrypted-tbn2.gstatic.com/shopping?q=tbn:ANd9GcR6TgaoGhlELZDbAAEli75YpvU1Q9z-IiiG6VWFyXdTN2LE8m7eu-bowjLth9x1ehuCXoJRLidB0bl-JwecYrFabPD1CmeyhUkr_DkcpHL4Q4SNKJ8bEfm0pg"
+    }
+</script>
