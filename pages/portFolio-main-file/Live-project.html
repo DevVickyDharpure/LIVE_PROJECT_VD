@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Desing Project
+        ..
+    </title>
+    <style>
+        .main-container {
+            height: 100vh;
+            width: 100vw;
+        }
+
+        .section-one {
+            height: 100%;
+            width: 100%;
+            background-color: black;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 60px;
+
+        }
+
+        .headline {
+            width: 100%;
+            font-size: 35px;
+            text-align: center;
+            color: white;
+            background-color: black;
+        }
+
+        .project-box {
+            height: 350px;
+            width: 350px;
+            background-color: rgb(136, 138, 139);
+        }
+
+        .project-box:hover {
+            transform: scale(1.1);
+            box-shadow: 0 0 15px rgb(10, 179, 209);
+        }
+
+        .img-subject {
+            height: 230px;
+            width: 300px;
+            margin-top: 10px;
+            margin-left: 25px;
+        }
+        .project-name{
+            font-size: 20px;
+            text-align: center;
+        }
+        .project-button{
+            height: 30px;
+            width: 130px;
+            margin-left: 110px;
+            border-radius: 4px;
+             background-color: rgb(3, 3, 101);
+            border: none;
+        }
+        a{
+            text-decoration: none;
+            color: wheat    ;
+            
+        }
+         @media(max-width:430px){
+             .section-one {
+            height: auto;
+            flex-direction: column;
+        }
+           .project-box {
+            height: 300px;
+            width: 300px;
+            background-color: rgb(224, 236, 243);
+            border-radius: 8px;
+        }
+        .img-subject {
+            height:180px;
+            width: 280px;
+            margin-top: 11px;
+            margin-left: 10px;
+        }
+        .project-button{
+            margin-left: 85px;   
+        }
+
+     
+        }
+    </style>
+
+</head>
+
+<body>
+    <div class="main-container">
+
+        <div class="headline">Desing Project</div>
+        <!--  -->
+        <div class="section-one">
+
+            <div class="project-box">
+                <img class="img-subject" src="https://www.tenacioustechies.com/wp-content/uploads/2022/07/live-project-1.jpg" alt="">
+                <p class="project-name">live-project</p>
+                <button class="project-button"><a href="https://devvickydharpure.github.io/live-project-html/">view-project</a></button>
+            </div>
+            <div class="project-box">
+                <img class="img-subject" src="https://www.shutterstock.com/shutterstock/videos/1069884154/thumb/2.jpg?ip=x480" alt="">
+                <p class="project-name">Coming Soon</p>
+
+            </div>
+            
+        </div>
+    </div>
+</body>
+
+</html>
