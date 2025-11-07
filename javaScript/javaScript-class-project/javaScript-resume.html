@@ -14,20 +14,19 @@
         .class-one {
             height: 100%;
             width: 100%;
-            background-color: rgb(0, 0, 70);
+            background-color: rgb(164, 165, 157);
             display: flex;
             justify-content: center;
             align-items: center;
         }
 
-      
+
 
         /*  part-one----img---contact---skill--section----start  */
         .information-box-1 {
             height: 95%;
             width: 20%;
-            background-color: rgb(225, 255, 253);
-
+            background-color: rgb(236, 255, 254);
             display: flex;
             flex-direction: column;
             margin-top: 10px;
@@ -44,29 +43,53 @@
 
 
         }
-        .github-img{
+
+        .github-img {
             display: flex;
         }
-        .png-img{
+
+        .png-img {
             height: 25px;
             width: 25px;
-            margin-top: px;
+            margin-left: 40px;
         }
-        .git-lin{
+
+        .git-lin {
             margin-top: 4px;
         }
 
-        .information-box-2 {
-            height: 95%;
-            width: 60%;
-            background-color: rgb(255, 255, 255);
-            margin-left: 29px;
-            margin-top: 10px;
-        }
+       
 
         b {
-            margin-left: 20px;
-            font-size: 23px;
+            margin-left: 40px;
+            font-size: 25px;
+        }
+
+        .contact-text {
+            margin-left: 40px;
+            font-size: 18px;
+        }
+        .skills-text{
+             margin-left: 40px;
+            font-size: 18px;
+        }
+        /*    ----- part-one----img---contact---skill--section----end  */
+         .information-box-2 {
+            height: 95%;
+            width: 40%;
+            background-color: rgb(255, 255, 255);
+            margin-left: 15px;
+            margin-top: 10px;
+        }
+        /* developer  name */
+        h1{
+            font-size: 50px;
+            margin-left: 30px;
+        }
+        h2{
+          font-size: 30px;
+            margin-left: 68px;  
+            margin-top: -20px;
         }
     </style>
 </head>
@@ -82,24 +105,27 @@
                 <b id="Contact"></b>
 
 
-                <span id="PhoneNo"></span>
+                <span class="contact-text" id="PhoneNo"></span>
 
-                <span id="Email"></span>
+                <span class="contact-text" id="Email"></span>
 
                 <div class="github-img">
-                 <span> <img class="png-img" src="../../assets/img/icons8-github-logo-48.png" alt=""></span>
-                   <span class="git-lin" id="GitHub"></span>
+                    <!----- img-github---- -->
+                    <span> <img class="png-img" src="../../assets/img/icons8-github-logo-48.png" alt=""></span>
+
+                    <span class="git-lin" id="GitHub"></span>
                 </div>
-            
-                 <div class="github-img">
-                 <span> <img class="png-img" src="../../assets/img/icons8-linkedin-48.png" alt=""></span>
-                   <span class="git-lin" id="LinkedIn" ></span>
+
+                <div class="github-img">
+                    <span> <img class="png-img" src="../../assets/img/icons8-linkedin-48.png" alt=""></span>
+                    <span class="git-lin" id="LinkedIn"></span>
                 </div>
                 <br><br>
+                <!-- skill--section--- -->
                 <b id="Skills"></b>
-                <span id="Html"></span>
-                <span id="Css"></span>
-                <span id="Javascript"></span>
+                <span class="skills-text" id="Html"></span>
+                <span class="skills-text" id="Css"></span>
+                <span class="skills-text" id="Javascript"></span>
 
             </div>
             <!-- informarion--box--two -->
@@ -109,8 +135,8 @@
 
 
                 <h1> Vicky Dharpure </h1>
-                
-                 <h2>Full stack developer</h2>
+
+                <h2>Full stack developer</h2>
             </div>
         </div>
     </div>
