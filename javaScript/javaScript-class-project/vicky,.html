@@ -1,306 +1,50 @@
-
 <!DOCTYPE html>
-<html>
-
+<html lang="en">
 <head>
-    <title>Calculator</title>
-    <style>
-        body{
-             display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: center;
-        }
-        p{
-         font-size: 24px;
-        }
-        .table {
-            width: 500px;
-            height: 600px;
-            border-style: solid;
-            border-color: black;
-            border-width: 3px;
-            border-collapse: collapse;
-           
-        }
-        .first-row 
-        .first-row-td-one 
-        {
-            border-style: solid;
-            border-color: black;
-            border-width: 3px;
-            text-align: right;
-            height: 100px;
-            font-size: 50px;
-            border-collapse: collapse;
-            background-color: gray;
-        }
-        .second-row
-        {
-            height: 80px;
-            width: 80px;
-        } 
-        .second-row-td-one 
-        {
-            border-style: solid;
-            border-color: black;
-            border-width: 3px;
-            background-color: darkgray;
-            font-size: 30px;
-            text-align: center;
-            width: 100px;
-        }
-        .second-row-td-two 
-        {
-            border-style: solid;
-            border-color: black;
-            border-width: 3px;
-            background-color: darkgray;
-            font-size: 30px;
-            text-align: center;
-            width: 100px;
-        }
-
-        .second-row-td-three {
-            border-style: solid;
-            border-color: black;
-            border-width: 3px;
-            background-color: darkgray;
-            height: 70px;
-            font-size: 30px;
-            text-align: center;
-            width: 100px;
-
-        }
-
-        .second-row-td-four {
-            border-style: solid;
-            border-color: black;
-            border-width: 3px;
-            background-color: darkgray;
-            font-size: 30px;
-            text-align: center;
-            background-color:darkorange;
-        }
-
-        .third-row 
-        {
-            height: 80px;
-            width: 80px;
-        }
-        .third-row-td-one
-        {
-            border-style: solid;
-            border-color: black;
-            border-width: 3px;
-            background-color: darkgray;
-            font-size: 30px;
-            text-align: center;
-            width: 100px;
-        }
-
-        .third-row-td-two {
-            border-style: solid;
-            border-color: black;
-            border-width: 3px;
-            background-color: darkgray;
-            font-size: 30px;
-            text-align: center;
-            width: 100px;
-        }
-
-        .third-row-td-three {
-            border-style: solid;
-            border-color: black;
-            border-width: 3px;
-            background-color: darkgray;
-            font-size: 30px;
-            text-align: center;
-            width: 100px;
-        }
-
-        .third-row-td-four {
-            border-style: solid;
-            border-color: black;
-            border-width: 3px;
-            background-color: darkgray;
-            font-size: 30px;
-            text-align: center;
-            width: 100px;
-            background-color:darkorange;
-        }
-
-        .fourth-row 
-       {
-        height: 80px;
-        width: 80px;
-       }
-        .fourth-row-td-one 
-        {
-            border-style: solid;
-            border-color: black;
-            border-width: 3px;
-            background-color: darkgray;
-            font-size: 30px;
-            text-align: center;
-            width: 100px;
-        }
-
-        .fourth-row-td-two {
-            border-style: solid;
-            border-color: black;
-            border-width: 3px;
-            background-color: darkgray;
-            font-size: 30px;
-            text-align: center;
-            width: 100px;
-        }
-
-        .fourth-row-td-three {
-            border-style: solid;
-            border-color: black;
-            border-width: 3px;
-            background-color: darkgray;
-            font-size: 30px;
-            text-align: center;
-            width: 100px;
-        }
-
-        .fourth-row-td-four {
-            border-style: solid;
-            border-color: black;
-            border-width: 3px;
-            background-color: darkgray;
-            font-size: 30px;
-            text-align: center;
-            width: 100px;
-            background-color:darkorange;
-        }
-        .fifth-row
-        {
-            height: 80px;
-            width: 80px;
-        }
-        .fifth-row-td-one {
-            border-style: solid;
-            border-color: black;
-            border-width: 3px;
-            background-color: darkgray;
-            font-size: 30px;
-            text-align: center;
-            width: 100px;
-        }
-
-        .fifth-row-td-two {
-            border-style: solid;
-            border-color: black;
-            border-width: 3px;
-            background-color: darkgray;
-            font-size: 30px;
-            text-align: center;
-        }
-
-        .fifth-row-td-three {
-            border-style: solid;
-            border-color: black;
-            border-width: 3px;
-            background-color: darkgray;
-            font-size: 30px;
-            text-align: center;
-            width: 100px;
-           
-        }
-
-        .fifth-row-td-four {
-            border-style: solid;
-            border-color: black;
-            border-width: 3px;
-            background-color: darkgray;
-            font-size: 30px;
-            text-align: center;
-            width: 100px;
-            background-color:darkorange;
-        }
-        .sixth-row 
-        {
-            height: 80px;
-            width: 80px;
-        }
-        .sixth-row-td-one {
-            border-style: solid;
-            border-color: black;
-         
-            background-color: darkgray;
-            font-size: 30px;
-            text-align: center;
-        }
-        .sixth-row-td-two {
-            border-style: solid;
-            border-color: black;
-            border-width: 3px;
-            background-color: darkgray;
-            font-size: 30px;
-            text-align: center;
-            width: 100px;
-        }
-
-        .sixth-row-td-three {
-            border-style: solid;
-            border-color: black;
-            border-width: 3px;
-            background-color: gray;
-            font-size: 30px;
-            text-align: center;
-            width: 100px;
-            background-color:darkorange;
-        }
-    </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>variable in js </title>
 </head>
 <body>
-    <p>Calculator</p>
-    <table class="table">
-        <!--first row-->
-        <tr class="first-row">
-            <td colspan="4" class="first-row-td-one">0</td>
-        </tr>
-        <!--second row-->
-        <tr class="second-row">
-            <td class="second-row-td-one">AC</td>
-            <td class="second-row-td-two">+/-</td>
-            <td class="second-row-td-three">%</td>
-            <td class="second-row-td-four">÷</td>
-        </tr>
-        <!--third row-->
-        <tr class="third-row">
-            <td class="third-row-td-one">7</td>
-            <td class="third-row-td-two">8</td>
-            <td class="third-row-td-three">9</td>
-            <td class="third-row-td-four">*</td>
-        </tr>
-        <!--fourth row-->
-        <tr class="fourth-row">
-            <td class="fourth-row-td-one">6</td>
-            <td class="fourth-row-td-two">5</td>
-            <td class="fourth-row-td-three">4</td>
-            <td class="fourth-row-td-four">-</td>
-        </tr>
-        <!--fifth row-->
-        <tr class="fifth-row">
-            <td class="fifth-row-td-one">3</td>
-            <td class="fifth-row-td-two">2</td>
-            <td class="fifth-row-td-three">1</td>
-            <td class="fifth-row-td-four">+</td>
-        </tr>
-        <!--sixth row-->
-        <tr class="sixth-row">
-            <td colspan="2" class="sixth-row-td-one">0</td>
-            <td class="sixth-row-td-two">.</td>
-            <td class="sixth-row-td-three">=</td>
-        </tr>
-    </table>
-    <script>
-        function buttonOne(){}
-        
-    </script>
+    <div class="div">
+        <div class="container"></div>
+    </div>
 </body>
 </html>
+<script>
+    // let 
+   let a = 10 
+alert("A :"=a)
+
+
+
+
+//  let number = 0
+//  function add(){
+
+//     let userInput =20 
+//     number = number + userInput
+//     userInput =80
+//     number = number + userInput
+//  }
+//  add()
+//  add()
+//  alert(number)
+
+
+function add(){
+    
+}
+
+function getAmount(){
+    let balance = 30000
+    let amount = Number (prompt ("Enter amount widthraw : "))
+    alert("balance amount is " + Number (balance-amount)) 
+}
+// 
+  getAmount()
+
+
+
+</script>
+
