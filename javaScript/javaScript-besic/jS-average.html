@@ -10,25 +10,41 @@
             height: 100vh;
             width: 100vw;
             display: flex;
-            flex-direction: column;
             justify-content: center;
             align-items: center;
         }
 
+        .class-one {
+            height: 60%;
+            width: 40%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            background-color: rgb(255, 248, 248);
+            box-shadow: 1px 2px 5px 3px rgb(122, 121, 121);
+        }
+
         .screen-box {
-            height: 400px;
+            height: 250px;
             width: 500px;
             background-color: wheat;
+            font-size: 30px;
+            border-radius: 5px;
         }
 
         .box {
             height: 40px;
-            width: 150px;
+            width: 130px;
+            margin-top: 10px;
         }
-        button{
+
+        button {
             height: 40px;
             width: 140px;
-            background-color: lightgreen;
+            background-color: rgb(4, 125, 4);
+            border: none;
+            border-radius: 9px;
+            margin-top: 15px;
         }
     </style>
 </head>
@@ -36,20 +52,22 @@
 <body>
 
     <div class="main-box">
-        <div class="screen-box" id="display"></div>
-        <div>
-            <input class="box" type="text" id="input1">
-            <input class="box" type="text" id="input2">
-            <input class="box" type="text" id="input3">
-        
-                <input class="box" type="text" id="input4">
-                <input class="box" type="text" id="input5">
-          
-        </div>
-      
-        <button onclick="vicky()"></button>
-        <button onclick="vicky2()"></button>
+        <div class="class-one"> 
+            <h1><u>Average</u></h1>
+            <div class="screen-box" id="display"></div>
+            <div>
+                <input class="box" type="text" id="input1">
+                <input class="box" type="text" id="input2">
+                <input class="box" type="text" id="input3">
 
+                <!-- <input class="box" type="text" id="input4">
+                <input class="box" type="text" id="input5"> -->
+
+            </div>
+
+            <button onclick="vicky()"> Submit</button>
+
+        </div>
 
     </div>
 </body>
@@ -57,30 +75,25 @@
 </html>
 <script>
     function vicky() {
-     
 
-        let a = Number( document.getElementById("input1").value  ) ;
-        let b = Number( document.getElementById("input2").value ) ; 
-       let c = Number( document.getElementById("input3").value )  ;
-       let d = Number( document.getElementById("input4").value ) ; 
-        let e = Number( document.getElementById("input5").value )  ;
 
-       
-    
+        let a = Number(document.getElementById("input1").value);
+        let b = Number(document.getElementById("input2").value);
+        let c = Number(document.getElementById("input3").value);
+   
 
+
+
+
+        let x = a + b + c;
        
-       let x =  a + b + c ;
-       let y = d + e ;
-       let average = (x+ y)/2; 
-       
-       document.getElementById("display").innerHTML = x /3 ;
-       document.getElementById("display").innerHTML = y /2 ;
-       document.getElementById("display").innerHTML = average /2;
-    
-       
-    }
-    function vicky2(){
-        
+        let average = (x ) / 2;
+
+        document.getElementById("display").innerHTML = x / 3;
+        document.getElementById("display").innerHTML = y / 2;
+        document.getElementById("display").innerHTML = average / 2;
+
+
     }
 
 
