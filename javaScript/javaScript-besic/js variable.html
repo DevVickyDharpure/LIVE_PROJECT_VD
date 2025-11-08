@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="screen" id="display"> </div>
+    <button onclick="addnumber()"> button</button>
+</body>
+</html>
+<script>
+// 
+    let  a=5 
+    let b=5
+    function add(){
+        a=10
+        b=10
+    }
+    a=30
+    add()
+    alert(a +b)
+
+// 
+// 
+    let o =0 
+    let n =20
+    let m =60
+
+    function diff(){
+         o= n-m
+    }
+    m =60
+    n =100
+    diff()
+    alert(o)
+
+
+
+
+
+
+    let x= 9
+    let input =0
+ document.getElementById("display").innerHTML= x;
+    function addnumber(){
+      x;
+        input = Number ( prompt () )
+         x = x + input
+             alert(x)
+               document.getElementById("display").innerHTML= x
+    }
+
+</script>

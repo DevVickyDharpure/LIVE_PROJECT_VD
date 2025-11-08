@@ -14,7 +14,7 @@
         .class-one {
             height: 100%;
             width: 100%;
-            background-color: rgb(164, 165, 157);
+            background-color: rgb(122, 122, 122);
             display: flex;
             justify-content: center;
             align-items: center;
@@ -134,9 +134,9 @@
             <div class="information-box-2">
 
 
-                <h1> Vicky Dharpure </h1>
+                <h1 id="Name" > </h1>
 
-                <h2>Full stack developer</h2>
+                <h2 id="Course"></h2>
             </div>
         </div>
     </div>
@@ -145,7 +145,7 @@
 </html>
 
 <script>
-
+    //    ---- contact --
     let profileImage = "../../assets/img/IMG_20251013_122130.jpg"
     let contact = "  Contact"
     let phoneNo = " 📞  8975657856 "
@@ -153,14 +153,17 @@
     let github = "  GitHub"
     let linkedin = "LinkedIn"
 
-
-
-
+//   ----- skill ---
     let skill = " * SKILLS"
     let html = ". HTMl"
     let css = " . CSS"
     let js = " . JavaScript"
 
+
+    // name
+
+    let name ="Vicky Dharpure"
+    let course = " Full Stack Developer"
 
 
 
@@ -180,10 +183,7 @@
     document.getElementById("LinkedIn").innerHTML = linkedin;
 
 
-
-
-
-
+// ------------skills--------
 
     document.getElementById("Skills").innerHTML = skill;
     document.getElementById("Html").innerHTML = html;
@@ -191,6 +191,10 @@
     document.getElementById("Javascript").innerHTML = js;
 
 
+
+     document.getElementById("Name").innerHTML = name ;
+      document.getElementById("Course").innerHTML =  course ;
+    //    document.getElementById("").innerHTML = 
 
 
     //  document.getElementById("").innerHTML =  

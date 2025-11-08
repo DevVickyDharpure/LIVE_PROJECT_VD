@@ -7,7 +7,8 @@
 </head>
 <body>
     <div class="div">
-        <div class="container"></div>
+        <div class="container" id=" display"></div>
+        <button onclick=" getAmount()">click</button>
     </div>
 </body>
 </html>
@@ -34,14 +35,16 @@
 function add(){
     
 }
-
-function getAmount(){
     let balance = 30000
+document.getElementById("display").innerHTML =balance ;
+function getAmount(){
+
     let amount = Number (prompt ("Enter amount widthraw : "))
     alert("balance amount is " + Number (balance-amount)) 
+    
 }
 // 
-  getAmount()
+
 
 
 
