@@ -46,11 +46,16 @@
             width: 300px;
             background-color: rgb(248, 231, 199);
             border-radius: 9px;
+            font-size: 30px;
         }
         .input-box{
             height: 40px;
             width: 280px;
-       
+            margin-top: 50px;
+        }
+        button{
+             height: 40px;
+            width: 280px;
             margin-top: 50px;
         }
     </style>
@@ -66,9 +71,16 @@
             <div class="atm-box">
                 <h1>ATM Withdrawal</h1>
 
-                <div class="screen-box"></div>
+                <div class="screen-box" id="display"></div>
 
-                <input class="input-box" type="text" placeholder="Enter amount To withdraw">
+                <input id="input-one" class="input-box" type="text" placeholder="Enter amount To withdraw">
+
+         
+
+
+                <button onclick="addnumber()"> Withdrawal</button>
+
+                 
             </div>
 
         </div>
@@ -113,18 +125,18 @@
 
 
 
+  
 
 
-
-    let x = 9
-    let input = 0
-    document.getElementById("display").innerHTML = x;
-    function addnumber() {
-        x;
-        input = Number(prompt())
-        x = x + input
-        alert(x)
-        document.getElementById("display").innerHTML = x
+    let balance = 50000
+    let withdraw = 0
+    document.getElementById("display").innerHTML = balance;
+    function addnumber() {      
+        balance = document.getElementById("input-one").value ;
+        balance = balance - Number (withdraw) ;
+         document.getElementById("input-one") 
+       
+       
     }
 
 </script>
