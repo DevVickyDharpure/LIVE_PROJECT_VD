@@ -4,14 +4,32 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>variable in js </title>
-</head>
-<body>
-    <div class="div">
+</head> <body>
+
+
+<h1>Sum of two variable </h1>
+
+<input type="number" id="input-one ">
+<br>
+<input type="number" id="input-two">
+<br>
+<button>Calculate sun</button>
+
+<br>
+<p id="output"></p>
+
+
+
+
+
+
+
+
+    <!-- <div class="div">
         <div class="container" id=" display"></div>
         <button onclick=" getAmount()">click</button>
-    </div>
+    </div> --> 
 </body>
-</html>
 <script>
     // let 
    
@@ -30,20 +48,20 @@
 //  add()
 //  add()
 //  alert(number)
+//   add()
+//    alert(number)
+function Calculate(){
+ let num1 = document.getElementById("input-one").value
+let num2 = document.getElementById("input-two").value
 
+let  sum = Number (num1 + num2 )
 
-function add(){
-    
+document.getElementById ("output").innerHTML= "Sun is" + sum;
+
 }
-    let balance = 30000
-document.getElementById("display").innerHTML =balance ;
-function getAmount(){
 
-    let amount = Number (prompt ("Enter amount widthraw : "))
-    alert("balance amount is " + Number (balance-amount)) 
-    
-}
-// 
+
+
 
 
 

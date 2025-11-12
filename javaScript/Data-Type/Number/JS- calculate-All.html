@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Math Operations Calculator</title>
+    <style>
+        .main-box {
+            height: 100vh;
+            width: 100vw;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .section-one {
+            height: 80%;
+            width: 80%;
+            border: 1px solid;
+        }
+
+        h1 {
+            text-align: center;
+            font-size: 50px;
+        }
+
+        .screen {
+            height: 150px;
+            width: 500px;
+            box-shadow: 3px 2px 5px 2px rgb(205, 199, 199);
+            margin-left: 320px;
+            text-align: center;
+        }
+p{
+    font-size: 30px;
+}
+        span {
+            font-size: 25px;
+            margin-left: 300px;
+
+        }
+
+        input {
+            height: 40px;
+            width: 500px;
+            margin-left: 300px;
+            font-size: 16px;
+
+        }
+        .button-1{
+            margin-left: 300px;
+            gap: 30px;
+            
+        }
+         .button-2{
+            margin-left: 300px;
+            gap: 30px;
+            
+        }
+        button{
+            height: 40px;
+            width: 200px;
+            margin-left: 30px;
+            background-color: green;
+            color: aliceblue;
+            border: none;
+            border-radius: 5px;
+            
+        }
+    </style>
+</head>
+
+<body>
+    <div class="main-box">
+
+        <div class="section-one">
+            <h1>Math Operations Calculator </h1>
+            <div class="screen" >
+                <h2>Answer</h2>
+              <p id="display"></p>
+                
+            </div>
+
+            <br><br>
+            <span>First Number : </span> <br>
+            <input type="number" id="input-one" placeholder="Enter first number">
+            <br> <br>
+            <span>Second Number :</span> <br>
+            <input type="number" id="input-two" placeholder="Enter second number">
+
+            <br><br>
+
+            <div class="button-1"><button onclick="Add()">Add (+)</button>
+                <button onclick="sub()">Subtract(-)</button>
+            </div>
+            <br>
+            <div class="button-2">
+                <button onclick="multiply()">Multiply (*)</button>
+            <button onclick="div()">Divide (/)</button>
+            </div>
+        </div>
+    </div>
+</body>
+<html>
+<script>
+    function Add() {
+
+        // input
+        let a = Number(document.getElementById("input-one").value)
+        b = Number(document.getElementById("input-two").value)
+
+        // procrsss
+        c = a + b
+
+        // output
+        document.getElementById("display").innerHTML = c;
+    }
+
+    // function--------two
+     function sub() {
+
+        // input
+        let a = Number(document.getElementById("input-one").value)
+        b = Number(document.getElementById("input-two").value)
+
+        // procrsss
+        c = a - b
+
+        // output
+        document.getElementById("display").innerHTML = c;
+    }
+   
+
+    // function---three
+     function multiply() {
+
+        // input
+        let a = Number(document.getElementById("input-one").value)
+        b = Number(document.getElementById("input-two").value)
+
+        // procrsss
+        c = a * b
+
+        // output
+        document.getElementById("display").innerHTML = c;
+    }
+
+    // function--------four
+     function div() {
+
+        // input
+        let a = Number(document.getElementById("input-one").value)
+        b = Number(document.getElementById("input-two").value)
+
+        // procrsss
+        c = a / b
+
+        // output
+        document.getElementById("display").innerHTML = c;
+    }
+
+</script>

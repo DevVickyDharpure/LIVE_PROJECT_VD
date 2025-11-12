@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>money withdraw</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Stack+Sans+Text:wght@200..700&display=swap" rel="stylesheet">
+    <style>
+        .main-box {
+            width: 100vw;
+            height: 100vh;
+            background-color: skyblue;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .section-one{
+            width: 30%;
+            height: 70%;
+            background-color: white;
+            /* text-align: center; */
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            border-radius: 10px;
+            
+            font-family: Stack Sans Text;
+        }
+
+        .display{
+            width: 80%;
+            height: 20%;
+            background-color: rgba(211, 211, 211, 0.442);
+            gap: 10px;
+            border-radius: 10px;
+            text-align: center;
+        }
+
+        input{
+            width: 80%;
+            height: 8%;
+            margin-top: 20px;
+            border-radius: 10px;
+            border: 1px solid;
+            margin-bottom: 20px;
+            text-align: center;
+            
+        }
+
+        .h1{
+            font-weight: 800;
+        }
+
+        button{
+            width: 80%;
+            height: 10%;
+            margin-bottom: 10px;
+            border-radius: 10px;
+            font-size: 18px;
+            background-color: skyblue;
+           border: 2px solid rgba(1, 1, 159, 0.491);
+            color: white;
+        }
+
+        .output{
+            width: 80%;
+            height: 10%;
+            background-color: rgba(131, 245, 131, 0.518);
+            font-family: 30px;
+            text-align: center;
+            align-content: center;
+            border-radius: 10px;
+            color: rgb(1, 104, 1);
+            display: none;
+        }
+        @media (max-width : 630px){
+               .section-one{
+            width: 60%;
+            height: 70%;
+            background-color: white;
+            /* text-align: center; */
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            border-radius: 10px;
+            
+            font-family: Stack Sans Text;
+        }
+        .h1{
+          font-size: 30px;
+        }
+        }
+    </style>
+</head>
+
+<body>
+    <!-- main- container-start--- -->
+    <div class="main-box">
+     
+        <div class="section-one">
+            <h1 class="h1"><b>ATM Withdrawal</b></h1>
+            <div class="display">
+                <br> <b>Total Balance : </b>
+                <br>
+                <b id="total-amount"></b>
+                <p id="display-1"></p>
+                <p id="display-2"></p>
+            </div>
+            <input type="text" id="input-1" placeholder="Enter amount to Withdraw">
+
+            <!-- money-withdraw--button -->
+            <button onclick="Withdraw()">Withdraw</button>
+            <div class="output" id="output">Withdraw Successsful</div>
+        </div>
+    </div>
+</body>
+<script>
+    // input 
+      let balance = 10000;
+        let withdrawAmount = 0 ;
+
+        document.getElementById("total-amount").innerHTML = balance ;
+
+        function Withdraw(){
+
+            withdrawAmount = document.getElementById("input-1").value;
+            balance = balance - withdrawAmount;
+
+         
+            document.getElementById("total-amount").innerHTML  = balance;
+            document.getElementById("output").style.display = "block"
+        }
+
+       
+</script>
+
+</html>
