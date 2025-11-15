@@ -1,26 +1,190 @@
+
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>string</title>
-</head>
-<body>
+    <title>Bank Transaction System</title>
+    <style>
+        .main-box {
+            height: 100vh;
+            width: 100vw;
+            display: flex;
+            justify-content: center;
+            align-items: center;
 
- <input type="text" id="input-one">
-    <input type="text" id="input-two">
-    <button onclick="vicky()"></button>
-    
+        }
+
+        .section-one {
+            height: 100%;
+            width: 100%;
+
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        span {
+            font-size: 40px;
+            margin-top: 90px;
+
+
+        }
+
+        .screen-box {
+            height: 100px;
+            width: 500px;
+            background-color: rgb(255, 255, 255);
+            margin-top: 30px;
+            box-shadow: 3px 2px 5px 2px rgb(205, 199, 199);
+            margin-left: 3%;
+        }
+
+        p {
+            font-size: 30px;
+            margin: 0;
+            padding: 0;
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        .money-box {
+            display: flex;
+            width: 60%;
+            justify-content: space-evenly;
+            margin-top: 25px;
+
+
+        }
+
+        .deposite {
+            height: 350px;
+            width: 550px;
+            background-color: rgb(255, 255, 255);
+            box-shadow: 3px 2px 5px 2px rgb(201, 195, 195);
+            border-radius: 3px;
+        }
+
+        input {
+            height: 40px;
+            width: 200px;
+            margin-top: 10px;
+            margin-left: 49px;
+            border-radius: 3px;
+         
+
+
+        }
+
+        .withdraw {
+            height: 250px;
+            width: 350px;
+            background-color: rgb(255, 255, 255);
+            box-shadow: 3px 2px 5px 2px rgb(205, 199, 199);
+            border-radius: 3px;
+            display: flex;
+
+        }
+
+        .button-1 {
+            height: 49px;
+            width: 200px;
+            margin-left: 49px;
+            border-radius: 4px;
+            border: none;
+            margin-left: 192px;
+            margin-top: 15px;
+            background-color: rgb(0, 107, 0);
+            color: aliceblue;
+            font-size: 21px;
+
+        }
+
+       
+        h3 {
+            margin: 0;
+            padding: 0;
+            margin-top: 8px;
+            margin-left: 15px;
+        }
+
+        .name-case-1 {
+            height: 40px;
+            width: 330px;
+            background-color: rgb(0, 107, 0);
+            font-size: 21px;
+            color: aliceblue;
+            padding-left: 20px;
+            padding-top: 7px;
+            border-radius: 3px;
+
+        }
+
+        .name-case-2 {
+            height: 40px;
+            width: 330px;
+            background-color: rgb(252, 54, 74);
+            font-size: 21px;
+            color: aliceblue;
+            padding-left: 20px;
+            padding-top: 7px;
+            border-radius: 3px;
+
+        }
+
+      
+
+        
+    </style>
+</head>
+
+<body>
+    <!-- container---start  -->
+    <div class="main-box">
+
+
+
+        <div class="section-one">
+            <!-- headline -->
+            <span>BMI</span>
+            
+            <br>
+            <div class="money-box">
+                <!-- ------ money--deposite----- -->
+                <div class="deposite">
+                <div class="screen-box">
+                <p> </p>
+                <p id="display"> 0</p>
+            </div>
+            
+                    <input id="input-one" type="text" placeholder="Enter first name">
+                    <input id="input-three" type="text" placeholder="Enter middle name">
+                    <input id="input-two" type="text" placeholder="Enter last name ">
+
+                    <button class="button-1"onclick="vicky()"> </button>
+                </div>
+                <!-- ----- money-withdraw ---- -->
+             
+            </div>
+        </div>
+    </div>
+    <!-- container---start  -->
 </body>
-</html>
+
+
 <script>
     function vicky(){
-    let  string1 =  prompt ( document.getElementById("input-one").value)   ;
-    let string2  = prompt(document.getElementById("input-two").value) ;
+    let  string1 =    document.getElementById("input-one").value ;
+     let string3  = document.getElementById("input-three").value ;
+    let string2  = document.getElementById("input-two").value ;
 
-    let c = string1 + string2
-
-    alert(c)
+    let c = string1 + string3 + string2
+  
+  document.getElementById("display").innerHTML = c ;
     }
-vicky()
+
 </script>
+
+</html>
+
