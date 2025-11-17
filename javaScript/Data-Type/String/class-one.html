@@ -1,25 +1,127 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Name Combainer</title>
+    <style>
+        body {
+            height: 100vh;
+            width: 100vw;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .main-box {
+            height: 520px;
+            width: 500px;
+            box-shadow: 1px 1px 4px 3px rgb(144, 143, 143);
+            border-radius: 10px;
+        }
+
+        .headline {
+            font-size: 40px;
+            margin-left: 100px;
+
+        }
+
+        .name-text {
+            font-size: 20px;
+            margin-left: 60px;
+
+        }
+
+        input {
+            height: 37px;
+            width: 370px;
+            margin-left: 60px;
+            margin-top: 10px;
+            border-radius: 5px;
+        }
+
+        button {
+            width: 370px;
+            height: 42px;
+            background-color: rgb(2, 78, 2);
+            color: aliceblue;
+            margin-left: 60px;
+            margin-top: 20px;
+            border-radius: 8px;
+            font-size: 18px;
+        }
+
+        p {
+            height: 70px;
+            width: 440px;
+            background-color: rgba(187, 255, 249, 0.716);
+            margin-left: 30px;
+            margin-top: 20px;
+            border-radius: 8px;
+            font-size: 19px;
+            text-align: center;
+        }
+
+        pre {
+            height: 50px;
+            width: 440px;
+            background-color: rgb(1, 14, 42);
+            color: wheat;
+            margin-left: 30px;
+            margin-top: 20px;
+            border-radius: 8px;
+        }
+    </style>
 </head>
+
 <body>
-    <p id="display"></p>
-     <button onclick="vicky()"> Click Me </button>
+    <div class="main-box">
+        <br>
+        <b class="headline">Name Combainer </b>
+        <br> <br> <br>
+        <!--  -->
+        <b class="name-text">First Name : </b>
+        <br>
+        <input type="text" placeholder="Enter First Name :" id="input-one">
+
+        <br>
+        <br>
+        <b class="name-text"> Last Name : </b>
+
+        <input type="text" placeholder="Enter Last Name :" id="input-two">
+
+
+        <button onclick="Name()">Combine Names </button>
+
+        <br>
+        <p >
+            <b class="screen1" id="display1"></b>
+        </p>
+
+        <pre id="display2">
+          
+        </pre>
+
+    </div>
 </body>
-
 <script>
+    function Name() {
+        let a = document.getElementById("input-one").value;
+        let b = document.getElementById("input-two").value;
 
 
-    function vicky(){
-            let  x = " <h2>Welcome to Javascript World <h2/> "
+        c = a  + " " +  b  ;
+        document.getElementById("display1").innerHTML = " Full Name  : " + c ;
 
-     document.getElementById("display").innerHTML = x ;
+         document.getElementById("display2").innerHTML = " Full Name  : " + c ;
+
 
 
 
     }
 </script>
+
 </html>
