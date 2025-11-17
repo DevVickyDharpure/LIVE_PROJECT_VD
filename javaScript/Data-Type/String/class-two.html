@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            height: 100vh;
+            width: 100vw;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .mainbox{
+            height: 300px;
+            width: 500px;
+            box-shadow:  1px 1px  4px 3px rgb(136, 136, 136) ;
+        }
+        h1{
+            margin-left: 20px;
+        }
+        button{
+            height: 40px;
+            width: 250px;
+            border: none;
+            margin-left: 120px;
+            background-color: rgb(140, 0, 140);
+            color: whitesmoke;
+            border-radius: 5px
+        }
+        p{
+            height: 60px;
+            width: 350px;
+            background-color: rgba(2, 135, 2, 0.588);
+             margin-left: 70px;
+             margin-top: 30px;
+        
+
+        }
+    </style>
+</head>
+<body>
+    <div class="mainbox">
+ <h1>Favorite Programming Language</h1>
+ <br>
+  <button onclick="Fav()"> Tell Us Your Favorite Language</button>
+
+  <p id="display"></p>
+
+    </div>
+
+</body>
+
+<script>
+    function Fav(){
+        let ans = prompt ()
+        document.getElementById("display").innerHTML = ans;
+
+    }
+</script>
+</html>
