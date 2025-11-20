@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Example Two</title>
+</head>
+<style>
+      body {
+            height: 100vh;
+            width: 100vw;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .main-box {
+            height: 520px;
+            width: 500px;
+            box-shadow: 1px 1px 4px 3px rgb(144, 143, 143);
+            border-radius: 10px;
+        }
+
+        
+          .screen1 {
+            height: 80px;
+            width: 440px;
+            background-color: rgba(255, 193, 187, 0.716);
+            margin-left: 30px;
+            margin-top: 20px;
+            border-radius: 8px;
+            font-size: 19px;
+            text-align: center;
+        }
+
+        .name-text {
+            font-size: 20px;
+            margin-left: 60px;
+
+        }
+
+        input {
+            height: 37px;
+            width: 370px;
+            margin-left: 60px;
+            margin-top: 10px;
+            border-radius: 5px;
+        }
+
+        button {
+            width: 370px;
+            height: 42px;
+            background-color: rgb(2, 37, 78);
+            color: aliceblue;
+            margin-left: 60px;
+            margin-top: 20px;
+            border-radius: 8px;
+            font-size: 18px;
+        }
+
+      
+
+     
+</style>
+<body>
+
+<div class="main-box">
+        <br>
+
+
+         <p class="screen1" >
+            <b   id="display"></b>
+          
+        </p>
+        <br><br>
+        <!--  -->
+        <b class="name-text">Enter base value : </b>
+        <br>
+        <input type="text" placeholder="Enter number one :" id="input-one" >
+
+        <br>
+        <br>
+        <b class="name-text">Enter exponent value : </b>
+
+        <input type="text" placeholder="Enter number two :" id="input-two" >
+
+
+        <button onclick="Calculate2()" > Calculate</button>
+
+        <br>
+       
+
+      
+ 
+
+    </div>
+
+
+    <script>
+     
+
+        function Calculate2(){
+        let num1 = document.getElementById("input-one").value
+        let num2 = document.getElementById("input-two").value
+
+        result = Number(num1) ** Number(num2)
+
+        document.getElementById("display").innerHTML ="The " +num1 +" ** "+ num2 + "  is      " + result ;
+      } 
+    </script>
+</body>
+
+</html>
