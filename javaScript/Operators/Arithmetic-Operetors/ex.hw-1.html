@@ -21,15 +21,15 @@
         }
 
         .main {
-            height: 65vh;
+            height: 75vh;
             width: 35vw;
             background-color: rgb(255, 255, 255);
             display: flex;
-            box-shadow: 0px 3px 30px 0px rgba(0, 0, 0, 0.211);
+            box-shadow: 0px 3px 30px 0px rgba(127, 123, 123, 0.211);
             align-items: center;
             flex-direction: column;
             border-radius: 10px;
-            border: 1px solid rgb(202, 202, 202);
+            border: 1px solid rgb(28, 3, 3);
         }
 
         input {
@@ -47,7 +47,7 @@
             font-size: 25px;
             background-color: rgb(255, 255, 255);
             box-shadow: 0px 3px 30px 0px rgba(0, 0, 0, 0.211);
-            border-bottom: 2px solid rgb(255, 179, 179);
+           
             border-radius: 10px;
         }
 
@@ -56,7 +56,7 @@
             width: 80%;
             border-radius: 5px;
             border: none;
-            background-color: brown;
+            background-color: rgba(175, 10, 10, 0.811);
             font-size: 20px;
             color: rgb(255, 255, 255);
         }
@@ -67,79 +67,10 @@
         }
 
         b {
-            color: red;
+            color: rgb(239, 26, 26);
             font-size: 20px;
         }
-        @media (min-width:300px) and (max-width:450px){
-            body {
-            margin: 0;
-            padding: 0;
-        }
-
-        .main-container {
-            height: 100vh;
-            width: 100vw;
-            background-color: whitesmoke;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-        }
-
-        .main {
-            height: 80vh;
-            width: 95vw;
-            background-color: rgb(255, 255, 255);
-            display: flex;
-            box-shadow: 0px 3px 30px 0px rgba(0, 0, 0, 0.211);
-            align-items: center;
-            flex-direction: column;
-            border-radius: 10px;
-            border: 1px solid rgb(202, 202, 202);
-        }
-
-        input {
-            height: 27px;
-            width: 90%;
-            margin-top:20px;
-        }
-
-        h1 {
-            color: rgb(1, 26, 45);
-        }
-
-        p {
-            height: 55px;
-            width: 90%;
-            font-size: 25px;
-            background-color: rgb(255, 255, 255);
-            box-shadow: 0px 3px 30px 0px rgba(0, 0, 0, 0.211);
-            border-bottom: 2px solid rgb(255, 179, 179);
-            border-radius: 10px;
-            margin-top: 40px;
-        }
-
-        button {
-            height: 45px;
-            width: 80%;
-            border-radius: 5px;
-            border: none;
-            background-color: brown;
-            font-size: 20px;
-            color: rgb(255, 255, 255);
-            margin-top: 15px;
-        }
-
-        label {
-            font-size: 19px;
-            margin-right: 65%;
-            margin-top: 20px
-        }
-
-        b {
-            color: red;
-            font-size: 20px;
-        }
-        }
+    
     </style>
 </head>
 
@@ -154,8 +85,24 @@
             <label>Third Number :</label><br>
             <input type="text" id="input-two" placeholder="Enter Third Number ...."><br>
             <button class="mini-box-2" onclick="showOutput()"> Calculate Average</button>
+            
             <p>The average of <b id="first"></b> , <b id="second"></b> , and <b id="third"></b> is =<b id="last"></b>
             </p>
         </div>
     </div>
+    <script>
+        function showOutput() {
+            let x = Number(document.getElementById("input").value);
+            let y = Number(document.getElementById("input-one").value);
+            let z = Number(document.getElementById("input-two").value);
+    
+            let a = x + y + z;
+    
+            document.getElementById("first").innerHTML = " " + x;
+            document.getElementById("second").innerHTML = " " + y;
+            document.getElementById("third").innerHTML = " " + z;
+            document.getElementById("last").innerHTML = " " + a / 3;;
+        }
+    </script>
 </body>
+</html>
