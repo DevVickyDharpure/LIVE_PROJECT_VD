@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <h1 id="one"></h1>
+
+    <h1 id="two"></h1>
+
+    <h1 id="three"></h1>
+
+    <h1 id="answer"></h1>
+    <script>
+
+        let num1 = Math.random()
+        let num2 = Math.random()
+
+
+        let a = Math.floor(num1 * 10)
+        let b = Math.floor(num2 * 20)
+
+
+
+
+
+        // alert(num1)
+        //   alert(num2)
+        let c = a * b ;
+        document.getElementById("one").innerHTML = a
+        document.getElementById("two").innerHTML = b
+        document.getElementById("three").innerHTML =  " The multiplication of  " + a  + "  and " + b + " is ";
+        let ans = prompt(a + " X " + b  +" ? ")
+
+        let result = ans == c ;
+
+        document.getElementById("answer").innerHTML = result ;
+
+
+
+
+
+    </script>
+</body>
+
+</html>
