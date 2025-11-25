@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  
+    <title>Document</title>
+<style>
+
+    .main-container{
+        height: 100vh;
+        width: 100vw;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .mini-box{
+        height: 60%;
+        width: 40%;
+         box-shadow: 1px 1px 4px 3px rgb(144, 143, 143);
+    }
+</style>
+
+</head>
+<body>
+    <div class="main-container">
+
+        <div class="mini-box">
+ <h1 >Student Mark Calculator</h1>
+
+
+
+
+ <button onclick="Add()"></button>
+  
+ <p id="display"></p>
+
+        </div>
+
+    </div>
+</body>
+<script>
+function Add(){
+      let maths = 5000
+    let sci =  50
+   
+    maths /= maths * sci;
+
+
+    document.getElementById("display").innerHTML = maths
+}
+</script>
+</html>

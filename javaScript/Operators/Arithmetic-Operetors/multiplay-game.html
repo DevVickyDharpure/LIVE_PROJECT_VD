@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <title>Document</title>
+    <style>
+        .main-container {
+            height: 100vh;
+            width: 100vw;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .mini-box {
+            height: 60%;
+            width: 40%;
+            box-shadow: 1px 1px 4px 3px rgb(144, 143, 143);
+        }
+
+        h1 {
+            text-align: center;
+        }
+
+        p {
+            text-align: center;
+            font-size: 25px;
+        }
+        input{
+             height: 37px;
+            width: 320px;
+            margin-left: 130px;
+            font-size: 18px;
+        }
+        button{
+            height: 39px;
+            width: 150px;
+            margin-left: 230px;
+            font-size: 17px;
+            border: none;
+            background-color: rgb(10, 2, 116);
+            border-radius: 5px;
+            color: aliceblue;
+
+        }
+        .ans{
+            
+           height: 50px;
+           width: 330px;
+           margin-left: 130px;text-align: center;
+           font-size: 25px;
+        }
+        b{
+            text-align: center;
+        }
+    </style>
+
+</head>
+
+<body> 
+    <!-- Start.   ---- -->
+    <div class="main-container">
+           
+        <div class="mini-box">
+            <h1>Multiplication Quiz</h1>
+            <p id="screen-one"> </p>
+             
+            <!--  ---- answer-box --- -->
+            <input type="text" id="ansbox">
+            <br>
+            <br>
+            <br>
+
+            <button onclick="Multiply()"> Check Answer</button>
+
+             <!-- boolean ans -->
+              <br>
+              <br>
+              <div class="ans">
+            <span id="result"> </span> 
+            </div>
+            <br>
+                 <!-- next Question-button--- -->
+              <button onclick="newQ()"> Next Question</button>
+
+        </div>
+
+<!-- end     ----- -->
+
+    </div>
+</body>
+<script>
+
+    // input
+    let num1 = Math.random()
+    let num2 = Math.random()
+
+
+    let a = Math.floor(num1 * 10)
+    let b = Math.floor(num2 * 10)
+
+ let num = a * b
+// 
+      document.getElementById("screen-one").innerHTML = " What is " + a + "  *  "+ b + " ?"
+
+    
+
+    function Multiply() {
+
+    
+        let ans = document.getElementById("ansbox").value ;
+
+        result = ans== num
+
+        document.getElementById("result").innerHTML = "Answer is  :  " + result
+
+    }
+    function newQ(){
+        location.reload()
+    }
+</script>
+
+</html>
