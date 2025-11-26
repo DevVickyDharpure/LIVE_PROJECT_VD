@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .main-box {
+            height: 100vh;
+            width: 100vw;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .mini-box {
+            height: 40%;
+            width: 25%;
+            box-shadow: 1px 1px 4px 3px rgb(144, 143, 143);
+        }
+
+        h1 {
+            text-align: center;
+        }
+
+        label {
+            margin-left: 70px;
+            font-size: 22px;
+        }
+
+        input {
+            height: 33px;
+            width: 230px;
+            margin-left: 70px;
+        }
+
+        button {
+            height: 36px;
+            width: 230px;
+            margin-left: 70px;
+            border: none;
+            background-color: rgb(85, 85, 152);
+            border-radius: 6px;
+            color: aliceblue;
+        }
+
+        .result-box {
+            font-size: 30px;
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="main-box">
+
+        <div class="mini-box">
+            <h1>Vote Eliginility checker</h1>
+
+            <label for="">Enter your age</label>
+            <input type="number" id="input-one">
+
+            <br><br>
+            <button onclick="Vote()"> Check Eliginility</button>
+
+
+
+            <br><br>
+            <div class="result-box" id="result"></div>
+        </div>
+
+    </div>
+
+
+
+    <script>
+
+        function Vote() {
+
+            let age = document.getElementById("input-one").value
+
+            if (18 <= age) {
+
+                alert(" to vote ")
+                document.getElementById("result").innerHTML = " To Vote ✅"
+                document.getElementById("result").style.color = "#08CB00";
+
+                console.log("to vote ")
+
+            }
+            else {
+
+                alert("not  to vote")
+                document.getElementById("result").innerHTML = " Not  to vote ❌"
+                 document.getElementById("result").style.color = "#DC0E0E";
+                console.log(" not to vote ")
+            }
+        }
+    </script>
+</body>
+
+</html>
