@@ -25,68 +25,72 @@
 
         p {
             text-align: center;
-            font-size: 25px;
+            font-size: 150%;
         }
-        input{
-             height: 37px;
-            width: 320px;
-            margin-left: 130px;
-            font-size: 18px;
+
+        input {
+            height: 8%;
+            width: 60%;
+            margin-left: 20%;
+            font-size: 100%;
         }
-        button{
-            height: 39px;
-            width: 150px;
-            margin-left: 230px;
-            font-size: 17px;
+
+        button {
+            height: 8%;
+            width: 30%;
+            margin-left: 36%;
+            font-size: 90%;
             border: none;
             background-color: rgb(10, 2, 116);
-            border-radius: 5px;
+            border-radius: 6%;
             color: aliceblue;
 
         }
-        .ans{
-            
-           height: 50px;
-           width: 330px;
-           margin-left: 130px;text-align: center;
-           font-size: 25px;
+
+        .ans {
+            height: 8%;
+            width: 30%;
+            margin-left: 36%;
+            text-align: center;
+            font-size: 120%;
         }
-        b{
+
+        b {
             text-align: center;
         }
     </style>
 
 </head>
 
-<body> 
+<body>
     <!-- Start.   ---- -->
     <div class="main-container">
-           
+
         <div class="mini-box">
             <h1>Multiplication Quiz</h1>
             <p id="screen-one"> </p>
-             
+
             <!--  ---- answer-box --- -->
-            <input type="text" id="ansbox">
+            <input type="number" id="ansbox">
             <br>
             <br>
             <br>
 
             <button onclick="Multiply()"> Check Answer</button>
 
-             <!-- boolean ans -->
-              <br>
-              <br>
-              <div class="ans">
-            <span id="result"> </span> 
+            <!-- boolean ans -->
+            <br>
+            <br>
+            <div class="ans">
+                <span id="result"> </span>
             </div>
             <br>
-                 <!-- next Question-button--- -->
-              <button onclick="newQ()"> Next Question</button>
+            <!-- next Question-button--- -->
+            <button onclick="newQ()"> Next Question</button>
 
         </div>
 
-<!-- end     ----- -->
+        <!-- end     ----- -->
 
     </div>
 </body>
@@ -100,24 +104,40 @@
     let a = Math.floor(num1 * 10)
     let b = Math.floor(num2 * 10)
 
- let num = a * b
-// 
-      document.getElementById("screen-one").innerHTML = " What is " + a + "  *  "+ b + " ?"
+    let num = a * b
+    // 
+    document.getElementById("screen-one").innerHTML = " What is " + a + "  *  " + b + " ?"
 
-    
+
 
     function Multiply() {
 
-    
-        let ans = document.getElementById("ansbox").value ;
+        // 
+        let ans = document.getElementById("ansbox").value;
+        result = ans == num
+       
+      
+        if (result = ans == num){
+            document.getElementById("result").innerHTML =  " ✅  Correct  "
+            console.log("correct")
+        }
 
-        result = ans== num
+    else{
+  
+        document.getElementById("result").innerHTML =  " ❌ Wroung"
+        console.log("uncorrect")
+    }
 
-        document.getElementById("result").innerHTML = "Answer is  :  " + result
+
+     
+
+  
+       
 
     }
-    function newQ(){
-        location.reload()
+    function newQ() {
+     
+       location.reload()
     }
 </script>
 
