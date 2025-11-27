@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Ticket Type checker</title>
+    <style>
+        .main-box {
+            height: 100vh;
+            width: 100vw;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .mini-box {
+            height: 40%;
+            width: 25%;
+            box-shadow: 1px 1px 4px 3px rgb(144, 143, 143);
+        }
+
+        h1 {
+            text-align: center;
+            font-size: 190%;
+        }
+
+        label {
+            margin-left: 20%;
+            font-size: 100%;
+        }
+
+        input {
+            height: 12%;
+            width: 65%;
+            margin-left: 20%;
+        }
+
+        button {
+            height: 14%;
+            width: 65%;
+            margin-left: 20%;
+            border: none;
+            background-color: rgb(20, 189, 20);
+            border-radius: 6px;
+            color: aliceblue;
+        }
+
+        .result-box {
+            font-size: 150%;
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="main-box">
+
+        <div class="mini-box">
+            <h1>Ticket Type checker</h1>
+
+            <label for="">Enter your age</label> 
+
+            
+            <input type="number" id="input-one">
+
+            <br><br>
+            <button onclick="Vote()"> Check Eliginility</button>
+
+
+
+            <br><br>
+            <div class="result-box" id="result"></div>
+        </div>
+
+    </div>
+
+
+
+    <script>
+
+        function Vote() {
+
+            let age = document.getElementById("input-one").value
+
+            if (age <=12) {
+
+               
+                document.getElementById("result").innerHTML = " ✅"
+                document.getElementById("result").style.color = "#08CB00";
+
+                console.log("Child Ticket ")
+
+            }
+            else {
+
+              
+                document.getElementById("result").innerHTML = " ❌"
+                 document.getElementById("result").style.color = "#DC0E0E";
+                console.log(" Adult Ticket ")
+            }
+        }
+    </script>
+</body>
+
+</html>
