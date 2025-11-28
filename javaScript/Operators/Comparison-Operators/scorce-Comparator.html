@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Scorce Comperator</title>
+    <style>
+        .main-box {
+            height: 100vh;
+            width: 100vw;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .mini-box {
+            height: 44%;
+            width: 25%;
+            box-shadow: 1px 1px 4px 3px rgb(144, 143, 143);
+        }
+
+        h1 {
+            text-align: center;
+            font-size: 190%;
+        }
+
+        label {
+            margin-left: 20%;
+            font-size: 100%;
+        }
+
+        input {
+            height: 12%;
+            width: 65%;
+            margin-left: 20%;
+        }
+
+        button {
+            height: 14%;
+            width: 65%;
+            margin-left: 20%;
+            border: none;
+            background-color: rgb(20, 189, 34);
+            border-radius: 6px;
+            color: aliceblue;
+        }
+
+        .result-box {
+            font-size: 100%;
+            text-align: center;
+  
+        }
+          @media (max-width:430px) {
+              h1 {
+    
+            font-size: 90%; 
+        }
+
+        label {
+            
+            font-size: 70%;
+        }
+
+        input {
+            height: 6%;
+            width: 60%;
+            margin-left: 20%;
+        }
+
+        button {
+            height: 6%;
+            width: 65%;
+            margin-left: 20%;
+            font-size: 40%;
+          
+          
+        }
+
+        .result-box {
+            font-size: 80%;
+            text-align: center;
+        }
+          }
+
+    </style>
+</head>
+
+<body>
+    <div class="main-box">
+
+        <div class="mini-box">
+            <h1>Scorce Comperator </h1>
+
+            <label for="">First Scorce </label> 
+
+            
+            <input type="number" id="input-one">
+
+            <br>
+            <label for="">second Scorce </label> 
+            <input type="number" id="input-two">
+
+            <br><br>
+            <button onclick="EvenOdd()"> Check Number </button>
+
+
+
+            <br><br>
+            <div class="result-box" id="result"></div>
+        </div>
+
+    </div>
+
+
+
+    <script>
+
+        function EvenOdd() {
+
+            let a = document.getElementById("input-one").value
+             let b = document.getElementById("input-two").value
+
+            if (a>=b ) {
+
+               
+                document.getElementById("result").innerHTML = "First score is higer than second score " +a
+                document.getElementById("result").style.color = "#08CB00";
+
+                console.log(" ")
+
+            }
+            else {
+
+              
+                document.getElementById("result").innerHTML = " First score is smaller than second score  " +b
+                 document.getElementById("result").style.color = "#DC0E0E";
+                console.log(" ")
+            }
+        }
+    </script>
+</body>
+
+</html>
