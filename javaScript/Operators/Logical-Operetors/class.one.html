@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .main-box{
+            height: 100vh;
+            width: 100vw;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .mini-box{
+            height: 60%;
+            width: 35%;
+            box-shadow:1px 1px 4px 3px rgb(144, 143, 143) ;
+            
+        }
+        h1{
+            text-align: center;
+            font-size: 190%;
+        }
+        p{
+            font-size: 130%;
+            margin-left: 13%;
+        }
+        input{
+            height: 7%;
+            width: 70%;
+            margin-left: 13%;
+        }
+        button{
+            height: 7%;
+            width: 50%;
+            margin-left: 22%;
+            border: none;
+            background-color: rgb(0, 152, 0);
+            font-size: 100%;
+            border-radius: 5px;
+        }
+        h2{
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="main-box">
+
+        <div class="mini-box">
+            <h1> Welcome Back </h1>
+ <br>
+
+            <p>Email or Username</p>
+            <input type="text" id="input-one">
+
+            <p>password</p>
+            <input type="number" id="input-two">
+            <br><br>
+
+            <h2 id="display"></h2>
+
+            <button onclick="Login()"> Login in</button>
+
+        </div>
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+    <script>
+        let username = "vicky";
+        let email = " dharpurevicky9@gmail.com";
+        let password = 1234;
+
+
+
+
+
+
+        function Login() {
+
+            userName = document.getElementById("input-one").value;
+            passworD = document.getElementById("input-two").value;
+
+            if ((userName == username) && passworD == password) {
+              
+                alert("Login Successful")
+                console.log("Login Successful1")
+
+                 a = userName + passworD
+              a =  document.getElementById("display").innerHTML = "Login Successful  ✅"
+               a =  document.getElementById("display").style.color="green" 
+            }
+            else {
+                alert("login Fail")
+                console.log("Login Fail")
+               a =  document.getElementById("display").innerHTML = "Login Fail  ❌"
+                a =  document.getElementById("display").style.color = "red"
+            }
+
+        }
+
+
+    </script>
+</body>
+
+</html>
