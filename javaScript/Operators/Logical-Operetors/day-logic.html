@@ -13,6 +13,16 @@
             justify-content: center;
             align-items: center;
         }
+        .mini-box{
+            height: 40%;
+            width: 30%;
+              box-shadow:1px 1px 4px 3px rgb(144, 143, 143) ;
+        }
+        h1{
+            text-align: center;
+            font-size: 190%;
+        }
+        .result-box{}
     </style>
 </head>
 
@@ -21,24 +31,30 @@
 
     <div class="main-container">
         <div class="mini-box">
+            <h1> Today Saturday or Sunday</h1>
+
+            <div class="result-box"></div>
 
         </div>
     </div>
 
     <script>
         let day = new Date().getDay()
-        // alert(day)
+        // // alert(day)
 
-
-        let date = new Date().getDate()
-        //   alert(date)
-
+ let date = new Date().getDate
+          alert(date)
+       
         if ((day == 0) || (day == 6)) {
             alert("Today is weekend")
         }
         else {
             alert("Today is weekday")
         }
+
+
+        
+
 
 
     </script>
