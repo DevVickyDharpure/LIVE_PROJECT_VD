@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .main-container {
+            height: 100vh;
+            width: 100vw;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .mini-box {
+            height: 63%;
+            width: 35%;
+            box-shadow: 1px 1px 4px 3px rgb(144, 143, 143);
+            display: flex;
+            flex-direction: column;
+            text-align: center;
+
+        }
+         h1{
+       
+            font-size: 190%;
+        }
+        p{
+            font-size: 110%;
+       
+        }
+        label{
+            margin-right: 53%;
+        }
+         input{
+            height: 7%;
+            width: 70%;
+            margin-left: 13%;
+        }
+         button{
+            height: 7%;
+            width: 50%;
+            margin-left: 24%;
+            border: none;
+            background-color: rgb(0, 152, 0);
+            font-size: 100%;
+            border-radius: 5px;
+        }
+         h2{
+            text-align: center;
+             height: 10%;
+            width: 80%;
+                box-shadow: 1px 1px 4px 3px rgb(144, 143, 143);
+                margin-left: 10%;
+        }
+    </style>
+
+</head>
+
+<body>
+    <div class="main-container">
+        <div class="mini-box">
+  <h1>Bitwise OR Max Approximation </h1>
+
+
+  <br>
+  <label for="">First Number (interger)</label>
+  <input type="number" id="input-one">
+  <br>
+  <input type="text" id="input-two">
+<br><br>
+<button onclick="EvenOdd()">Check Even/Odd</button>
+
+<br>
+<h2 id="display"></h2>
+
+
+
+        </div>
+    </div>
+
+
+
+    <script>
+
+       let num1 = 10
+
+       let num2 = 50
+
+       result =  num1| num2
+       alert(result)
+
+    </script>
+</body>
+
+</html>
