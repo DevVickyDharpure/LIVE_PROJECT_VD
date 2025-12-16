@@ -50,7 +50,7 @@
         }
          h2{
             text-align: center;
-             height: 10%;
+             height: 20%;
             width: 80%;
                 box-shadow: 1px 1px 4px 3px rgb(144, 143, 143);
                 margin-left: 10%;
@@ -71,7 +71,7 @@
   <br>
   <input type="text" id="input-two">
 <br><br>
-<button onclick="EvenOdd()">Check Even/Odd</button>
+<button onclick="Bitwise()">Check Even/Odd</button>
 
 <br>
 <h2 id="display"></h2>
@@ -85,12 +85,22 @@
 
     <script>
 
-       let num1 = 10
+        function Bitwise(){
 
-       let num2 = 50
+       let num1 = document.getElementById("input-one").value 
+
+       let num2 =  document.getElementById("input-two").value 
 
        result =  num1| num2
-       alert(result)
+       if( num1 < num2){
+        alert(num2 + "  is nearest to " + resuult)
+       }
+       else{
+          alert(num1 + "  is nearest to " + resuult)
+       }
+   
+
+        }
 
     </script>
 </body>
