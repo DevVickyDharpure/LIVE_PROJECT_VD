@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .class-10{
+            height: 200px;
+            width: 200px;
+            background-color: yellowgreen;
+            display: none;
+        }
+         .class-12{
+            height: 200px;
+            width: 200px;
+            background-color: rgb(62, 63, 61);
+            display: none;
+        }
+        
+
+    </style>
+</head>
+<body>
+
+<input type="radio" name="class" value="class" id="10-class"> <label for="">10 th Class</label> <br>
+<input type="radio" name="class" value="class" id="12-class"> <label for="">12 th Class</label> <br>
+<button onclick="getValue()">Submit</button>
+
+
+
+<div class="class-10" id="q">
+    <h1>10</h1>
+
+    <input type="text" id="one" >
+     <input type="text" id="two" >
+     <button onclick="Grade()">Submit</button>
+</div>
+<div class="class-12" id="w">
+    <h1>12</h1>
+</div>
+
+    <script>
+function getValue(){
+ grade = " "
+ if(document.getElementById("10-class").checked ){
+    grade = "10 class"
+ }
+ else if (document.getElementById("12-class").checked ) {
+       grade = "12 class"
+ }
+ else{
+    grade = " No options Select "
+ }
+//  alert(grade)
+// 
+if( grade == "10 class") {
+    document.getElementById ("q").style.display = "block"
+      document.getElementById ("w").style.display = "none"
+}
+else{
+     document.getElementById ("w").style.display = "block"
+       document.getElementById ("q").style.display = "none"
+}
+}
+// 
+function Grade(){
+ mark = document.getElementById("one").value 
+ total = document.getElementById("two").value
+
+ A = mark/ total *100
+ alert(A)
+
+
+        if(mark >= 90){
+            alert(" A+")
+        }
+        else if (mark >= 75){
+            alert("B")
+        }
+          else if (mark >= 50){
+            alert("C")
+        }
+          else if (mark >= 35){
+            alert("D")
+        }
+        else{
+            alert("Fail")
+        }
+    }
+    </script>
+</body>
+</html>
