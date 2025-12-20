@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .main-box {
+            height: 100vh;
+            width: 100vw;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .mini-box {
+            height: 44%;
+            width: 30%;
+            box-shadow: 1px 1px 4px 3px rgb(144, 143, 143);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+
+        }
+
+        label {
+            margin-right: 30%;
+            font-size: 120%;
+        }
+
+        input {
+            height: 8%;
+            width: 60%;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="main-box">
+        <div class="mini-box">
+            <h1>Temperature Checker</h1>
+            <br><br>
+            <label for="">Enter Temperature</label>
+            <input type="number" id="input">
+            <br><br>
+            <button onclick="Temp()">Check Temperature </button>
+            <br><br>
+            <div class="result-box" id="display"></div>
+
+        </div>
+    </div>
+
+    <script>
+        function Temp() {
+            let tem = document.getElementById("input").value
+            display = " "
+            if (tem >= 40) {
+                display = " Temperature is vary hot !"
+            }
+            else if (tem >= 30) {
+                display = " Temperature is  hot "
+
+            }
+            else if (tem >= 20) {
+                display = " Temperature is warm "
+
+            }
+            else if (tem >= 10) {
+                display = " Temperature is cool "
+
+
+            }
+            else if (tem >= 0) {
+                display = " Temperature is cold "
+            }
+            else {
+                display = " Temperature isfreezing "
+
+            }
+            document.getElementById("display").innerHTML = display
+        }
+    </script>
+</body>
+
+</html>
