@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Number to day </title>
+</head>
+<body>
+<input type="text" id="input-one">
+<button onclick="ShowDay()"></button>
+<div id="display"></div>
+
+
+    <script>
+        function ShowDay(){
+        let  num = document.getElementById("input-one").value ;
+
+        let day = " "
+
+        if(num == 0){
+            day = " Sunday"
+        }
+           else if (num ==1){
+             day = " Monday"
+        }
+          else if (num== 2){
+            day = " Tuesday "
+          
+        }
+          else if (num == 3){
+            day = " Wednesday "
+            
+        }
+           else if (num ==4){
+             day = " Thuesday"
+        }
+          else if (num== 5){
+            day = " Friday "
+          
+        }
+          else if (num == 6){
+            day = " Saturday "
+            
+        }
+    
+ document.getElementById("display").innerHTML=day
+        }
+    </script>
+</body>
+</html>
