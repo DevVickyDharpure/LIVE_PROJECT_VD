@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .main-box {
+            height: 100vh;
+            width: 100vw;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: rgba(1, 1, 54, 0.885);
+
+        }
+
+        .mini-box {
+            height: 60%;
+            width: 30%;
+            background-color: rgba(0, 0, 0, 0.814);
+            border-radius: 5%;
+            /* box-shadow: 1px 1px 4px 3px rgb(144, 143, 143); */
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        h1 {
+            font-size: 180%;
+            color: aliceblue;
+        }
+
+        p {
+            text-align: center;
+            color: rgba(240, 248, 255, 0.544);
+            margin-top: -1%;
+        }
+
+        .img-box {
+            height: 18%;
+            width: 20%;
+            border-radius: 50%;
+
+        }
+        .on{
+            display: none;
+            height: 68%;
+            width: 70%;
+            border-radius: 50%;
+        }
+        .of {
+            display: none;
+            height: 68%;
+            width: 70%;
+            border-radius: 50%;
+        }
+    .button-2{
+        display: none;
+    }
+    </style>
+</head>
+
+<body>
+    <div class="main-box">
+
+        <div class="mini-box">
+            <h1>Light ON / OFF Toggle</h1>
+            <p>A clean interactive demonstraction of light state <br> switching</p>
+            <br>
+            <div class="img-box">
+                <img  class="on" id="img-one" src="https://www.shutterstock.com/image-illustration/selective-yello-wallpaper-empty-studio-260nw-2046872996.jpg"
+      
+                    alt="">
+                    <img class="of" id="img-two" src="https://m.media-amazon.com/images/I/11x11LDz6qL.jpg" alt="">
+            </div>
+            <br><br>
+            <button class="button-1" onclick="on()"  id=" button-one"> turn </button>
+            <button class="button-2" onclick="of()" id="button"> 12</button>
+
+        </div>
+    </div>
+
+
+    <script>
+        function on() {
+            let On = document.getElementById("img-one").style.display = " block"  
+              document.getElementById("button-one").style.display = " none"  
+           
+               
+        }
+        function of(){
+            let On = document.getElementById("img-two").style.display = " block"   
+        }
+      
+
+        
+    </script>
+</body>
+
+</html>
