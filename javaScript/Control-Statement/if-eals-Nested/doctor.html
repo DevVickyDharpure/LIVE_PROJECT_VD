@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .main-container {
+            height: 100vh;
+            width: 100vw;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .mini-box {
+            height: 44%;
+            width: 30%;
+            box-shadow: 1px 1px 4px 3px rgb(144, 143, 143);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+
+        }
+             .class-10{
+            height: 200px;
+            width: 200px;
+            background-color: yellowgreen;
+            display: none;
+        }
+         .class-12{
+            height: 200px;
+            width: 200px;
+            background-color: rgb(62, 63, 61);
+            display: none;
+        }
+        
+    </style>
+</head>
+
+<body>
+    <div class="main-container">
+        <div class="mini-box">
+
+
+
+            <input type="checkbox" id="input-one">
+            <input type="checkbox" id="input-two">
+
+<div class="class-10" id="q">
+    <h1>10</h1>
+
+    
+     
+</div>
+<div class="class-12" id="w">
+    <h1>12</h1>
+</div>
+
+
+
+
+            <button onclick="doctor()">sumit</button>
+        </div>
+    </div>
+    <!--  -->
+    <script>
+        // 
+        function doctor() {
+            Ans = " "
+            if (document.getElementById("input-one").checked) {
+                Ans = " Doctor is Avliable"
+
+            }
+
+            else if (document.getElementById("input-two").checked) {
+                Ans = " Doctor is not Avliable"
+
+            }
+
+            else {
+                Ans = "  No options Select"
+            }
+        }
+            alert(Ans)
+            if (Ans == "") {
+                document.getElementById("q").style.display = "block"
+                document.getElementById("w").style.display = "none"
+            }
+            else {
+                document.getElementById("w").style.display = "block"
+                document.getElementById("q").style.display = "none"
+            }
+
+
+        
+
+        //         function getValue(){
+        //  grade = " "
+        //  if(document.getElementById("10-class").checked ){
+        //     grade = "10 class"
+        //  }
+        //  else if (document.getElementById("12-class").checked ) {
+        //        grade = "12 class"
+        //  }
+        //  else{
+        //     grade = " No options Select "
+        //  }
+        // //  alert(grade)
+        // // 
+        // if( grade == "10 class") {
+        //     document.getElementById ("q").style.display = "block"
+        //       document.getElementById ("w").style.display = "none"
+        // }
+        // else{
+        //      document.getElementById ("w").style.display = "block"
+        //        document.getElementById ("q").style.display = "none"
+        // }
+        // }
+    </script>
+</body>
+
+</html>
