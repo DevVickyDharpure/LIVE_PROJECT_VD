@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        let hour = prompt()
+
+
+        switch (true    ) {
+            case ((hour>=5)&& (hour< 11)):
+                alert(" Good Morning");
+                break;
+
+            case ((hour>=12)&& (hour< 17)):
+                alert(" Good Afternoom");
+                break;
+
+            case ((hour>=18)&& (hour< 21)):
+                alert(" Good Evning");
+                break;
+
+            case ((hour>=21 && hour<=24)|| (hour > 0 && hour<=4)):
+                alert(" Good Night");
+                break;
+            default:
+                alert("  plese enter  a vaid number")
+                print( hour)
+
+        }
+
+    </script>
+</body>
+
+</html>
