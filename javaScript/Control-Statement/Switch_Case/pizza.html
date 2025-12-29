@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .main-container {
+            height: 100vh;
+            width: 100vw;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+        }
+          .mini-box{
+        height: 40%;
+        width: 40%;
+         box-shadow: 1px 1px 4px 3px rgb(144, 143, 143);
+    }
+    h1{
+        text-align: center;
+    }
+</style>
+    </style>
+</head>
+
+<body>
+    <div class="main-container">
+
+        <div class="mini-box">
+            <h1>Pizza Menu</h1>
+            <button onclick="Smallpizza()">Small Pizza</button> <br>
+            <button onclick="Mediumpizza()"> Medium Pizza</button> <br>
+            <button onclick="Largepizza()">Large Pizza</button>
+        </div>
+
+    </div>
+
+    <script>
+        let pizza = 0
+        select = " "
+
+        function getPizza() {
+            switch (pizza) {
+                case 150:
+                    select = " "
+                    console.log("small")
+                    break;
+                case 250:
+                    console.log("medium")
+                    break;
+
+                default:
+                    console.log("large")
+            }
+        }
+
+        function Smallpizza() {
+            pizza = 150
+            getPizza();
+        }
+        function Mediumpizza() {
+            pizza = 250
+            getPizza();
+        }
+        function Largepizza() {
+            pizza = 350
+            getPizza();
+        }
+    </script>
+</body>
+
+</html>
