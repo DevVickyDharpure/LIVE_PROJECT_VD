@@ -2,20 +2,25 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Image Slider</title>
+  <title>Advanced Image Slider</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
 <div class="slider">
   <div class="slides">
-    <img src="https://picsum.photos/id/1015/800/400" class="slide">
-    <img src="https://picsum.photos/id/1016/800/400" class="slide">
-    <img src="https://picsum.photos/id/1018/800/400" class="slide">
+    <img src="https://images.squarespace-cdn.com/content/v1/5c77fa240b77bd5a7ff401e5/1638200886376-3RX7S1XLRBIET679O7EZ/nathan-anderson--W4UMfJEzVg-unsplash.jpg?format=2500w" class="slide active">
+    <img src="https://upload.wikimedia.org/wikipedia/commons/3/36/Hopetoun_falls.jpg" class="slide">
+    <img src="https://thumbs.dreamstime.com/b/panoramic-photography-landscape-world-scenery-natural-scenery-natural-scenery-natural-scenery-large-landscape-wide-screen-334051064.jpg" class="slide">
+    <img src="https://i0.wp.com/picjumbo.com/wp-content/uploads/beautiful-nature-scenery-free-photo.jpg?w=2210&quality=70" class="slide">
   </div>
 
-  <button class="prev" onclick="prevSlide()">❮</button>
-  <button class="next" onclick="nextSlide()">❯</button>
+  <!-- Buttons -->
+  <button class="prev">&#10094;</button>
+  <button class="next">&#10095;</button>
+
+  <!-- Dots -->
+  <div class="dots"></div>
 </div>
 
 <script src="script.js"></script>
