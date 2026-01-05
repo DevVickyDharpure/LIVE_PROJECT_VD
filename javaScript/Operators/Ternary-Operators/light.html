@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+ 
+<head>
+    <title>Light ON OFF</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+ 
+        }
+ 
+        .main {
+            height: 100vh;
+            width: 100vw;
+            background-color: #EFECE3;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+ 
+        .box {
+            height: 70%;
+            width: 35%;
+            background-color: rgb(255, 255, 255);
+            box-shadow: 0px 4px 30px 0px rgba(0, 0, 0, 0.304);
+            display: flex;
+            justify-content: space-evenly;
+            flex-direction: column;
+            align-items: center;
+            border-radius: 10px;
+        }
+ 
+        .image {
+            height: 30%;
+            width: 35%;
+            background-color: rgb(255, 255, 255);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-radius: 100%;
+        }
+ 
+        img {
+            height: 100%;
+            width: 100%;
+        }
+ 
+        footer {
+            height: 25%;
+            background-color: antiquewhite;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            width: 90%;
+            box-shadow: 0px 4px 30px 0px rgba(0, 0, 0, 0.28);
+            border-radius: 10px;
+        }
+ 
+        button {
+            height: 35px;
+            width: 28%;
+            border-radius: 10px;
+            background-color: blue;
+            color: white;
+            border: none;
+            font-size: 20px;
+ 
+        }
+    </style>
+</head>
+ 
+<body>
+ 
+    <div id="main" class="main">
+        <div id="only-box" class="box">
+            <h2 id="h2q">Light ON / OFF toggle</h2>
+            <label id="label">A clean interactive demonstration of light switching</label>
+            <div class="image"> <img id="light"
+                    src="https://cliply.co/wp-content/uploads/2019/06/371906590_RESPONSIVE_SMARTPHONE_400.png">
+            </div>
+            <button onclick="Light()" id="button-block">Turn ON</button>
+            <footer id="footer">
+                <p id="text-footer">Click the button above to toggle the light ,between ON <br>
+                    And Off states. Observe how the bulb changes visually <br>and how pages adapts to each state.</p>
+            </footer>
+        </div>
+    </div>
+    <script>
+        let on = false;
+ 
+ 
+        
+        function Light() {
+ 
+            on = on ? false : true;
+ 
+            document.getElementById("light").src =
+                on
+                    ? "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSaid_4RYtltEqLboG7VbIlPnRPtU0KobWttQTjqVKW51zVuyVR%22"
+ 
+                    : "https://cliply.co/wp-content/uploads/2019/06/371906590_RESPONSIVE_SMARTPHONE_400.png";
+
+
+
+//     change backgound. colour text   
+
+            document.getElementById("button-block").innerHTML = on ? "Turn OFF" : "Turn ON"
+            document.getElementById("only-box").style.backgroundColor = on ? "white" : "#1E1E2E"
+            document.getElementById("main").style.backgroundColor = on ? "#EFECE3" : "#161E37"
+            document.getElementById("h2q").style.color = on ? "black" : "white"
+            document.getElementById("label").style.color = on ? "black" : "#A7A7A7"
+            document.getElementById("footer").style.backgroundColor = on ? "antiquewhite" : "#2C2C3F"
+            document.getElementById("text-footer").style.color = on ? "black" : "white"
+ 
+ 
+        }
+    </script>
+ 
+</body>
+ 
+</html>

@@ -56,9 +56,7 @@
             width: 70%;
             border-radius: 50%;
         }
-    .button-2{
-        display: none;
-    }
+   
     </style>
 </head>
 
@@ -69,30 +67,37 @@
             <h1>Light ON / OFF Toggle</h1>
             <p>A clean interactive demonstraction of light state <br> switching</p>
             <br>
-            <div class="img-box">
-                <img  class="on" id="img-one" src="https://www.shutterstock.com/image-illustration/selective-yello-wallpaper-empty-studio-260nw-2046872996.jpg"
-      
-                    alt="">
-                    <img class="of" id="img-two" src="https://m.media-amazon.com/images/I/11x11LDz6qL.jpg" alt="">
+            <div class="img-box" id="output">
+               
             </div>
             <br><br>
             <button class="button-1" onclick="on()"  id=" button-one"> turn </button>
-            <button class="button-2" onclick="of()" id="button"> 12</button>
+        
 
         </div>
     </div>
 
 
     <script>
+
+
+online = false ; 
+
+
         function on() {
-            let On = document.getElementById("img-one").style.display = " block"  
-              document.getElementById("button-one").style.display = " none"  
-           
+
+            online = online  ? true : false ;
+          
+            document.getElementById("output").src = online 
+            ? "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTUo8DdHTyU0NSWSmz8s2wV70VnqAc4RDgryw&s"
+
+
+            :
+            "https://icons.veryicon.com/png/o/miscellaneous/smart-icon-library/internet-61.png" ;
+            
                
         }
-        function of(){
-            let On = document.getElementById("img-two").style.display = " block"   
-        }
+       
       
 
         
