@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+</head>
+
+<body>
+    <script>
+        do {
+            let A = prompt("Enter Operation \n1. Add \n2. Diff \n3. Multi \n4. Div \n5. Exit");
+
+            if ("Add" === A) {
+                let n1 = prompt("Enter First Number");
+                let n2 = prompt("Enter Second Number");
+                let sum = Number(n1) + Number(n2);
+                alert("The Sum of the given number is : " + sum)
+            }
+            else if ("Diff" === A) {
+                let n1 = prompt("Enter First Number");
+                let n2 = prompt("Enter Second Number");
+                let diff = Number(n1) - Number(n2);
+                alert("The Difference of the given number is : " + diff)
+            }
+            else if ("Multi" === A) {
+                let n1 = prompt("Enter First Number");
+                let n2 = prompt("Enter Second Number");
+                let multiply = Number(n1) * Number(n2);
+                alert("The Multiplication of the given number is : " + multiply)
+            }
+            else if ("Div" === A) {
+                let n1 = prompt("Enter First Number");
+                let n2 = prompt("Enter Second Number");
+                let division = Number(n1) / Number(n2);
+                alert("The Division of the given number is : " + division)
+            }
+            else if ("Exit" === A) {
+                break;
+                alert("Operation is Ended");
+            }
+            else {
+                alert("Invalid Operation")
+            }
+        } while (true)
+    </script>
+</body>
+
+</html>
