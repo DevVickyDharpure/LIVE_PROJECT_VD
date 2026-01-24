@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>calculator</title>
+    <link rel="stylesheet" href="./calci.css">
+</head>
+
+<body>
+    <!--       -     -    -->
+    <div class="main-box">
+
+        <div class="calculator-box">
+
+            <div class="screen-box" id="display"></div>
+
+            <div>
+                <button class="button-row-1" onclick="allClear()">AC</button>
+                <button class="button-row-1" onclick="getText('')">C</button>
+                <button class="button-row-1" onclick="getText('+/-')">+/-</button>
+                <button class="button-row-1" onclick="getText('%')">%</button>
+            </div>
+            <div>
+                <button class="button-row-1" onclick="getText('7')">7</button>
+                <button class="button-row-1" onclick="getText('8')">8</button>
+                <button class="button-row-1" onclick="getText('9')">9</button>
+                <button class="button-row-1" onclick="getText('÷')">÷</button>
+            </div>
+            <div>
+                <button class="button-row-1" onclick="getText('4')">4</button>
+                <button class="button-row-1" onclick="getText('5')">5</button>
+                <button class="button-row-1" onclick="getText('6')">6</button>
+                <button class="button-row-1" onclick="getText('x')">x</button>
+            </div>
+            <div>
+                <button class="button-row-1" onclick="getText('1')">1</button>
+                <button class="button-row-1" onclick="getText('2')">2</button>
+                <button class="button-row-1" onclick="getText('3')">3</button>
+                <button class="button-row-1" onclick="getText('-')">-</button>
+            </div>
+            <div>
+                <button class="button-row-1" onclick="getText('0')">0</button>
+                <button class="button-row-1" onclick="getText('=')">=</button>
+                <button class="button-row-1" onclick="getText('.')">.</button>
+                <button class="button-row-1" onclick="getText('+')">+</button>
+            </div>
+        </div>
+
+    </div>
+</body>
+
+</html>
+
+<script src="./calci.js"></script>
